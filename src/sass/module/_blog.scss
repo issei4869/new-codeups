@@ -2,12 +2,29 @@
 
 .blog {
   padding-top: rem(80);
+
   @include mq('md') {
+    position: relative;
     padding-top: rem(100);
     background-image: url(../images/common/Rectangle-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+  }
+}
+
+.blog::after {
+  @include mq('md') {
+    content: "";
+    position: absolute;
+    top: rem(25);
+    left: rem(100);
+    background-image: url(../images/common/_キンギョハナダイ.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-width: rem(437);
+    min-height: rem(201);
   }
 }
 
