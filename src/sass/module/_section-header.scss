@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.section-header {
+  // display: inline-block;
+  text-align: center;
+}
+
+.section-header__title {
+  font-size: rem(32);
+  font-family: $english-font-family;
+  line-height: calc(40 / 32);
+  //height: auto;
+}
+
+.section-header__title span {
+  color: $accent-color;
+}
+
+.section-header__subtitle {
+  margin-top: rem(4);
+  //display: block;
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+  font-family: $base-font-family;
+  color: $accent-color;
+  text-align: center;
+}
+

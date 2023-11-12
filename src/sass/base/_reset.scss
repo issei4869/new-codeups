@@ -1,3 +1,5 @@
+@use 'global' as *;
+
 *,
 *::before,
 *::after {
@@ -35,7 +37,12 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeLegibility;
-  line-height: 1.5;
+  // line-height: 1.5;
+  line-height: 1;
+  font-size: rem(16);
+  font-weight: $normal;
+  color: $font-color;
+  background-color: $base-color;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

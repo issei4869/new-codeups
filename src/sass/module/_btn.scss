@@ -1,0 +1,113 @@
+@use 'global' as *;
+
+.btn {
+  padding: calc(rem(16) - rem(1)) calc(rem(88) - rem(0)) calc(rem(16) - rem(1)) calc(rem(40) - rem(1));
+  position: relative;
+  display: inline-block;
+  border: 1px solid $accent-color;
+  background-color: $accent-color;
+  transition: .3s;
+}
+
+.btn:hover {
+  opacity: 1;
+  @include mq(md){
+      opacity: 1;
+  }
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: $base-color;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: .3s;
+  transition-property: transform;
+  
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: calc(rem(4) + rem(0));
+  left: calc(rem(4) + rem(0));
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $accent-color;
+  z-index: -2;
+}
+
+.btn span {
+  position: relative;
+  font-size: rem(14);
+  line-height: calc(22 / 14);
+  color: $base-color;
+  font-family: $english-font-family;
+  transition: .3s;
+}
+
+.btn span::before,
+.btn span::after {
+  content: "";
+  position: absolute;
+  background-color: $base-color;
+  border-radius: 2px;
+  transition: .3s;
+}
+
+.btn span::before {
+  top: 50%;
+  width: rem(40);
+  height: rem(1);
+  right: rem(-49);
+}
+.btn span::after {
+  top: 35%;
+  width: rem(1);
+  height: rem(9);
+  right: rem(-46);
+  transform: translateY(-35%) rotate(-45deg);
+}
+
+.btn:hover span {
+  color: $accent-color;
+}
+
+.btn:hover span::before,
+.btn:hover span::after {
+  background-color: $accent-color;
+}
+
+
+
+// Modifier
+.btn.btn--black {
+    background-color: #000;
+}
+
+.btn.btn--black::before {
+    content: "";
+    background: #fff;
+}
+
+.btn.btn--black span {
+    color: #fff;
+}
+
+.btn.btn--black:hover span {
+    @include mq(md){
+        color: #000;
+    }
+}
