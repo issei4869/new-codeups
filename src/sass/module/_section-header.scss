@@ -10,10 +10,26 @@
   font-family: $english-font-family;
   line-height: calc(40 / 32);
   //height: auto;
+  @include mq('md') {
+    font-size: rem(40);
+    line-height: 1;
+  }
+}
+
+.section-header__title--white {
+  @include mq('md') {
+    color: $base-color;
+  }
 }
 
 .section-header__title span {
   color: $accent-color;
+}
+
+.section-header__title--white span {
+  @include mq('md') {
+    color: #DDF0F1;
+  }
 }
 
 .section-header__subtitle {
@@ -26,3 +42,9 @@
   text-align: center;
 }
 
+.section-header__subtitle--white {
+  @include mq('md') {
+    color: $base-color;
+  }
+
+}

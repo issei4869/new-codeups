@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+.blog {
+  padding-top: rem(80);
+  @include mq('md') {
+    padding-top: rem(100);
+    background-image: url(../images/common/Rectangle-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+}
+
+.blog__inner {
+  
+}
+
+.blog__inner.inner {
+  padding: 0 rem(21);
+  @include mq('md') {
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.blog__list {
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}
+
+.blog__btn {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}

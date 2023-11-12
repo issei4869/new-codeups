@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.information {
+  padding: rem(80) 0;
+  background-color: #DDF0F1;
+  @include mq('md') {
+    padding: rem(100) 0 rem(76);
+  }
+}
+
+.information__inner {
+  
+}
+
+.information__list {
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.information__btn {
+  margin-top: rem(40);
+  text-align: center;
+}
