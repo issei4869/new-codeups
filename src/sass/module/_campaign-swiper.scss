@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.campaign-swiper__button-wrap {
+  margin-top: rem(70);
+  display: flex;
+  justify-content: left;
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev,
+.campaign-swiper__button-wrap .swiper-button-next {
+  position: relative;
+  width: rem(100);
+  height: rem(100);
+  background-color: #fff9ee;
+  border-radius: 50%;
+}
+
+.campaign-swiper__button-wrap .swiper-button-next {
+  margin-left: rem(100);
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev::before,
+.campaign-swiper__button-wrap .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: rem(13);
+  height: rem(13);
+  border-top: rem(3) solid #333;
+  border-right: rem(3) solid #333;
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.campaign-swiper__button-wrap .swiper-button-next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}

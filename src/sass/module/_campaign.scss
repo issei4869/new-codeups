@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+.campaign {
+    overflow-x: hidden;
+}
+
+.campaign__inner {
+    margin: auto;
+    padding: 0 prem(20);
+    max-width: prem(600);
+    width: 100%;
+    @include mq(md){
+        padding: 0 prem(25);
+        max-width: prem(1200);
+    }
+}
+
+.campaign__swiper {
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+}

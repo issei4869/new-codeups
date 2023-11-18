@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.campaign-card a {
+  padding: rem(15) rem(15) rem(35);
+  height: 100%;
+  display: block;
+  background-color: #fff9ee;
+}
+
+.campaign-card a:hover {
+  opacity: 1;
+}
+
+.campaign-card__img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.campaign-card__img img {
+  width: 100%;
+  aspect-ratio: 300/186;
+  object-fit: cover;
+  transition: .6s;
+}
+
+.campaign-card:hover .campaign-card__img img {
+  transform: scale(1.2);
+}
+
+.campaign-card__text {
+  margin-top: rem(15);
+  font-size: rem(15);
+  line-height: 1;
+  @include mq(md){
+      font-size: rem(20);
+  }
+}

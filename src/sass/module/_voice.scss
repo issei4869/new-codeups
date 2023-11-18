@@ -1,0 +1,67 @@
+@use 'global' as *;
+
+.voice {
+  padding-top: rem(80);
+  @include mq('md') {
+    position: relative;
+  }
+}
+
+.voice::before {
+  @include mq('md') {
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/キンギョハナダイ2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: rem(-40);
+    //left: rem(99);
+    left: calc(min(2%, rem(99)));
+    min-width: rem(301);
+    min-height: rem(138);
+  }
+}
+
+.voice::after {
+  @include mq('md') {
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/イバラタツ.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    bottom: rem(-73);
+    right: calc(50% - min(47%, rem(544)));
+    min-width: rem(71);
+    min-height: rem(162);
+  }
+}
+
+.voice__inner {
+  
+}
+
+.voice__inner.inner {
+  // padding: 0 rem(21);
+  // @include mq('md') {
+  //   padding-right: $padding-pc;
+  //   padding-left: $padding-pc;
+  // }
+}
+
+.voice__list {
+  margin-top: rem(43);
+  margin: 0 auto;
+  @include mq('md') {
+    margin-top: rem(33);
+  }
+}
+
+.voice__btn {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}

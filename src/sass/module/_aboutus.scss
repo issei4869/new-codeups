@@ -1,15 +1,27 @@
 @use 'global' as *;
 
 .aboutus {
+  position: relative;
+}
 
+.aboutus::before {
+  @include mq(md){
+    background-image: url(../images/common/サンゴとイソギンチャク.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    bottom: rem(-88.8);
+    right: calc(50% - min(48%, rem(640)));
+    width: rem(194);
+    height: rem(181);
+    z-index: 100;
+  }
 }
 
 .aboutus__inner {
 
-}
-
-.aboutus__wrap {
- 
 }
 
 .aboutus__wrap {
@@ -103,13 +115,15 @@
   }
 }
 
-.aboutus__aboutus__img-bottom-right {
+.aboutus__img-bottom-right {
   display: none;
   @include mq('md') {
     display: block;
     position: absolute;
     bottom: rem(-90);
-    right: rem(-97);
+    right: 0;
     width: rem(194);
+    margin: 0 calc(50% - 50vw + rem(83));
   }
 }
+

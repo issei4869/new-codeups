@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.page-top {
+  position: fixed;
+  width: rem(48);
+  height: rem(48);
+  right: rem(15);
+  bottom: rem(755);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+  @include mq('md') {
+    width: rem(80);
+    height: rem(80);
+    right: rem(20);
+    bottom: rem(573);
+  }
+}
+
+.page-top.is-show {
+  opacity: 1;
+  visibility: visible;
+}

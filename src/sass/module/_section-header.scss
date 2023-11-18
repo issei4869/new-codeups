@@ -22,6 +22,14 @@
   }
 }
 
+.section-header__title--contact {
+  font-size: rem(80);
+  line-height: 1;
+  @include mq('md') {
+    font-size: rem(80);
+  }
+}
+
 .section-header__title span {
   color: $accent-color;
 }
@@ -40,11 +48,20 @@
   font-family: $base-font-family;
   color: $accent-color;
   text-align: center;
+  @include mq('md') {
+    margin-top: rem(8);
+  }
 }
 
 .section-header__subtitle--white {
   @include mq('md') {
     color: $base-color;
   }
+}
 
+.section-header__subtitle--contact {
+  margin-top: rem(-6);
+  @include mq('md') {
+    margin-top: rem(-6);
+  }
 }
