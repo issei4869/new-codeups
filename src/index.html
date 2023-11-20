@@ -29,6 +29,9 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -206,7 +209,7 @@
         </div>
         <div class="campaign__swiper campaign-swiper">
           <div class="swiper js-campaign-swiper">
-            <ul class="swiper-wrapper">
+            <ul class="swiper-wrapper campaign-swiper__card">
               <li class="campaign-card swiper-slide">
                 <a href="#">
                   <div class="campaign-card__item">
@@ -218,16 +221,49 @@
                       <!-- カテゴリー -->
                       <p class="campaign-card__category">ライセンス講習</p>
                       <!-- タイトル -->
-                      <div class="campaign-card__title">ここにタイトルが入ります。ここにタイトル</div>
-                      <div class="campaign-card__text">
-                        全部コミコミ(お一人様)
-                      </div>
-                      <div class="campaign-card__price">
-                        <div class="campaign-card__false">
-                          ¥56,000
+                      <div class="campaign-card__title">ライセンス取得</div>
+                       <!-- サブタイトル -->
+                      <div class="campaign-card__wrapper">
+                        <div class="campaign-card__subtitle">
+                          全部コミコミ(お一人様)
                         </div>
-                        <div class="campaign-card__true">
-                          ¥46,000
+                        <div class="campaign-card__price">
+                          <div class="campaign-card__false">
+                            <span>¥56,000</span>
+                          </div>
+                          <div class="campaign-card__true">
+                            <span>¥46,000</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="campaign-card swiper-slide">
+                <a href="#">
+                  <div class="campaign-card__item">
+                    <div class="campaign-card__img">
+                      <img src="./assets/images/common/campaign2.jpg" alt="省略">
+                    </div>
+
+                    <div class="campaign-card__content">
+                      <!-- カテゴリー -->
+                      <p class="campaign-card__category">ライセンス講習</p>
+                      <!-- タイトル -->
+                      <div class="campaign-card__title">ライセンス取得</div>
+                       <!-- サブタイトル -->
+                      <div class="campaign-card__wrapper">
+                        <div class="campaign-card__subtitle">
+                          全部コミコミ(お一人様)
+                        </div>
+                        <div class="campaign-card__price">
+                          <div class="campaign-card__false">
+                            <span>¥56,000</span>
+                          </div>
+                          <div class="campaign-card__true">
+                            <span>¥46,000</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -239,19 +275,29 @@
                 <a href="#">
                   <div class="campaign-card__item">
                     <div class="campaign-card__img">
-                      <img src="./assets/images/common/campaign2.jpg" alt="省略">
-                    </div>
-                    <p class="campaign-card__text">タイトルタイトル</p>
-                  </div>
-                </a>
-              </li>
-              <li class="campaign-card swiper-slide">
-                <a href="#">
-                  <div class="campaign-card__item">
-                    <div class="campaign-card__img">
                       <img src="./assets/images/common/campaign3.jpg" alt="省略">
                     </div>
-                    <p class="campaign-card__text">タイトルタイトル</p>
+                    
+                    <div class="campaign-card__content">
+                      <!-- カテゴリー -->
+                      <p class="campaign-card__category">ライセンス講習</p>
+                      <!-- タイトル -->
+                      <div class="campaign-card__title">ライセンス取得</div>
+                       <!-- サブタイトル -->
+                      <div class="campaign-card__wrapper">
+                        <div class="campaign-card__subtitle">
+                          全部コミコミ(お一人様)
+                        </div>
+                        <div class="campaign-card__price">
+                          <div class="campaign-card__false">
+                            <span>¥56,000</span>
+                          </div>
+                          <div class="campaign-card__true">
+                            <span>¥46,000</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -261,17 +307,41 @@
                     <div class="campaign-card__img">
                       <img src="./assets/images/common/campaign4.jpg" alt="省略">
                     </div>
-                    <p class="campaign-card__text">タイトルタイトル</p>
+                    <div class="campaign-card__content">
+                      <!-- カテゴリー -->
+                      <p class="campaign-card__category">ライセンス講習</p>
+                      <!-- タイトル -->
+                      <div class="campaign-card__title">ライセンス取得</div>
+                       <!-- サブタイトル -->
+                      <div class="campaign-card__wrapper">
+                        <div class="campaign-card__subtitle">
+                          全部コミコミ(お一人様)
+                        </div>
+                        <div class="campaign-card__price">
+                          <div class="campaign-card__false">
+                            <span>¥56,000</span>
+                          </div>
+                          <div class="campaign-card__true">
+                            <span>¥46,000</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="campaign-swiper__button-wrap">
-            <div class="swiper-button-prev js-campaign-arrow"></div>
-            <div class="swiper-button-next js-campaign-arrow"></div>
-          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="campaign-swiper__button-wrap">
+          <div class="swiper-button-prev js-campaign-arrow"></div>
+          <div class="swiper-button-next js-campaign-arrow"></div>
+        </div>
+        <div class="campaign__btn">
+          <a href="#" class="btn">
+            <span>View more</span>
+          </a>
         </div>
       </div>
     </section>
@@ -322,9 +392,11 @@
         </div>
         <ol class="information__list information-list">
           <li class="information-list__item">
-            <div class="information-list__item-img">
+
+            <div class="information-list__item-img colorbox js-color">
               <img src="./assets/images/common/ocean3.png" alt="ocean3">
             </div>
+
             <div class="information-list__item-text-wrap">
               <div class="information-list__item-title">ライセンス講習</div>
               <p class="information-list__item-text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。
@@ -424,7 +496,7 @@
                   <div class="voice-list__item-title">ここにタイトルが入ります。ここにタイトル</div>
                 </div>
                 <!-- 右側の画像 -->
-                <div class="voice-list__item-img">
+                <div class="voice-list__item-img colorbox js-color">
                   <img src="./assets/images/common/Voice1.jpg" alt="省略">
                 </div>
               </div>
@@ -449,7 +521,7 @@
                   <div class="voice-list__item-title">ここにタイトルが入ります。ここにタイトル</div>
                 </div>
                 <!-- 右側の画像 -->
-                <div class="voice-list__item-img">
+                <div class="voice-list__item-img colorbox js-color">
                   <img src="./assets/images/common/Voice2.jpg" alt="省略">
                 </div>
               </div>
@@ -571,7 +643,7 @@
             <!-- ループ終了 -->
           </ul>
           <!-- 画像 -->
-          <picture class="price-list__img">
+          <picture class="price-list__img colorbox js-color">
             <source media="(min-width: 767px)" srcset="./assets/images/common/priceimg.jpg">
             <img src="./assets/images/common/ocean4.jpg" alt="省略">
           </picture>
@@ -757,11 +829,6 @@
   </footer>
 
   <div class="page-top" id="page-topbtn"><a href=""><img src="./assets/images/common/totop.png" alt="上にスクロールするボタン"></a></div>
-
-  <!-- JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
 </body>
 
 </html>
