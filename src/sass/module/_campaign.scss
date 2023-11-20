@@ -16,7 +16,7 @@
 }
 
 .campaign__swiper {
-  margin-top: rem(25);
+  margin-top: rem(24);
   margin-right: calc(50% - 50vw);
   width: 100vw;
   @include mq('md') {
@@ -25,7 +25,7 @@
 }
 
 .campaign__btn {
-  margin-top: rem(40);
+  margin-top: calc(rem(40) - rem(3));
   text-align: center;
   padding-bottom: rem(3);
   @include mq('md') {

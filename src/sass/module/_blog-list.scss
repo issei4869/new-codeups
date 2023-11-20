@@ -54,7 +54,7 @@
 }
 
 .blog-list__item-content {
-  padding: rem(8) rem(16) rem(24) rem(16);
+  padding: calc(rem(8) - rem(3)) rem(16) rem(24) rem(16);
   @include mq(md){
       
   }
@@ -77,10 +77,10 @@
 .blog-list__item-title {
   font-weight: $medium;
   border-bottom: 1px solid $accent-color;
-  padding-bottom: rem(8);
-    @include mq(md){
-      
-    }
+  padding-bottom: calc(rem(4) - rem(1));
+  @include mq(md){
+    
+  }
 }
 
 .blog-list__item-text {

@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .voice {
-  padding-top: rem(80);
+  //padding-top: rem(80);
   @include mq('md') {
     position: relative;
   }
@@ -51,7 +51,7 @@
 }
 
 .voice__list {
-  margin-top: rem(43);
+  margin-top: rem(40);
   margin: 0 auto;
   @include mq('md') {
     margin-top: rem(33);
@@ -59,8 +59,9 @@
 }
 
 .voice__btn {
-  margin-top: rem(40);
+  margin-top: calc(rem(40) + rem(1));
   text-align: center;
+  padding-bottom: rem(3);
   @include mq('md') {
     margin-top: rem(80);
   }

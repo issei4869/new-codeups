@@ -1,7 +1,6 @@
 @use 'global' as *;
 
 .contact {
-  padding: rem(80) 0 rem(100);
   position: relative;
   @include mq('md') {
     padding: rem(140) 0 rem(160);
@@ -150,6 +149,7 @@
 .contact__btn {
   margin-top: rem(40);
   text-align: center;
+  padding-bottom: rem(3);
   @include mq('md') {
     
   }

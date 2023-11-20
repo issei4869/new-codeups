@@ -28,7 +28,8 @@
   color: $base-color;
   font-family: $english-second-font-family;
   line-height: calc(48 / 40);
-  letter-spacing: 0.0216em;
+  letter-spacing: 0.54em;
+  text-indent: 0.54em;
   @include mq(md){
     font-size: rem(80);
     line-height: calc(100 / 80);
@@ -37,7 +38,7 @@
 }
 
 .mv__sub-title {
-  margin-top: rem(20);
+  //margin-top: rem(20);
   font-size: rem(20);
   color: $base-color;
   font-family: $english-font-family;

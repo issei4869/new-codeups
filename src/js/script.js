@@ -58,10 +58,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     fadeEffect: {
       crossFade: true,
     },
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 4000,
+    //     disableOnInteraction: false,
+    // },
   });
 
   // Campaignリサイズ処理（PC時のみ矢印表示）

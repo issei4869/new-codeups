@@ -1,9 +1,9 @@
 @use 'global' as *;
 
 .blog {
-  padding-top: rem(80);
 
   @include mq('md') {
+    padding-top: rem(80);
     position: relative;
     padding-top: rem(100);
     background-image: url(../images/common/Rectangle-bg.png);
@@ -42,15 +42,16 @@
 }
 
 .blog__list {
-  margin-top: rem(24);
+  margin-top: calc(rem(24) + rem(1));
   @include mq('md') {
     margin-top: rem(80);
   }
 }
 
 .blog__btn {
-  margin-top: rem(40);
+  margin-top: calc(rem(40) + rem(0));
   text-align: center;
+  padding-bottom: rem(3);
   @include mq('md') {
     margin-top: rem(80);
   }
