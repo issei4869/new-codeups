@@ -7,19 +7,25 @@
   }
 }
 
-.contact::after {
+.contact::before {
+  content: "";
+  position: absolute;
+  top: rem(-24);
+  right: calc(50% - min(48%, rem(172)));
+  background-image: url(../images/common/キンギョハナダイ4.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: rem(109);
+  min-height: rem(50);
   @include mq('md') {
-    content: "";
-    position: absolute;
-    top: rem(25);
-    //left: rem(100);
-    right: calc(50% - min(48%, rem(640)));
-    background-image: url(../images/common/キンギョハナダイ4.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    top: rem(103);
+    right: calc(50% - min(48%, rem(669)));
     min-width: rem(301);
     min-height: rem(138);
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
   }
 }
 
@@ -60,7 +66,7 @@
   width: 100%;
   margin: 0 auto; 
   border-bottom: rem(1) solid $accent-color;
-  padding-bottom: rem(6);
+  padding-bottom: calc(rem(8) - rem(1));
   @include mq('md') {
     max-width: rem(440);
   }

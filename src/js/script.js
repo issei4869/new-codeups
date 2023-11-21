@@ -91,7 +91,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       breakpoints: {
           768: {
               slidesPerView: 3.96,
-              spaceBetween: 40
+              spaceBetween: 39
           }
       },
       navigation: {

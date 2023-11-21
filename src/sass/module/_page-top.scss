@@ -2,19 +2,19 @@
 
 .page-top {
   position: fixed;
-  width: rem(48);
-  height: rem(48);
-  right: rem(15);
+  width: rem(53);
+  height: rem(53);
+  right: rem(12);
   bottom: rem(150);
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease 0s;
   @include mq('md') {
-    width: rem(80);
-    height: rem(80);
-    right: rem(20);
-    bottom: rem(100);
+    width: rem(89);
+    height: rem(89);
+    right: rem(16);
+    bottom: rem(94);
   }
 }
 

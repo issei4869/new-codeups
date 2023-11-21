@@ -69,6 +69,7 @@
   width: 100%;
   @include mq('md') {
     max-width: rem(492);
+    margin-left: calc(rem(93) + rem(1));
   }
 }
 

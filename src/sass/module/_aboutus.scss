@@ -12,8 +12,8 @@
     background-size: cover;
     position: absolute;
     content: "";
-    bottom: rem(-88.8);
-    right: calc(50% - min(48%, rem(640)));
+    bottom: rem(-90.8);
+    right: calc(50% - min(48%, rem(637)));
     width: rem(194);
     height: rem(181);
     z-index: 100;
@@ -112,7 +112,7 @@
   text-align: center;
   padding-bottom: rem(3);
   @include mq('md') {
-    margin-top: rem(40);
+    margin-top: calc(rem(40) + rem(1));
   }
 }
 

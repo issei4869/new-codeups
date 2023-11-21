@@ -12,6 +12,7 @@
 
 .campaign-card__item {
   flex-shrink: 0;
+  height: 100%;
 }
 
 .campaign-card a:hover {
@@ -54,7 +55,7 @@
   display: inline-block;
   flex-shrink: 0;
   @include mq(md){
-    padding: rem(6) rem(15);
+    padding: calc(rem(6) - rem(1)) calc(rem(16) - rem(1));
   }
 }
 

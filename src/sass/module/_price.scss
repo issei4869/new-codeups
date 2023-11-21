@@ -9,7 +9,7 @@
   }
 }
 
-.price::before {
+.price::after {
   @include mq('md') {
     content: "";
     position: absolute;
@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     bottom: rem(54);
-    left: calc(min(2%, rem(100)));
+    left: calc(min(7%, rem(100)));
     min-width: rem(437);
     min-height: rem(201);
   }
@@ -41,7 +41,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-between;
   @include mq('md') {
     margin-top: rem(40);
     flex-direction: row;
@@ -59,6 +58,7 @@
   margin-top: rem(40);
   text-align: center;
   @include mq('md') {
-    margin-top: rem(80);
+    padding-bottom: rem(3);
+    margin-top: calc(rem(80) + rem(1));
   }
 }

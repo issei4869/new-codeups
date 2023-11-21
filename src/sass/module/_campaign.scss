@@ -29,6 +29,6 @@
   text-align: center;
   padding-bottom: rem(3);
   @include mq('md') {
-    margin-top: rem(80);
+    margin-top: calc(rem(80) - rem(3));
   }
 }
