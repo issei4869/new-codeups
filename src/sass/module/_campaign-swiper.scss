@@ -56,3 +56,8 @@
 .campaign-swiper__button-wrap .swiper-button-next::after {
   background-image: url(../images/common/swiperbtn2.png);
 }
+
+.campaign-swiper__button-wrap .swiper-button-prev:hover::after,
+.campaign-swiper__button-wrap .swiper-button-next:hover::after {
+  opacity: 0.5;
+}

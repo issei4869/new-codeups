@@ -13,12 +13,12 @@
   @include mq('md') {
     content: "";
     position: absolute;
-    background-image: url(../images/common/キンギョハナダイ3.png);
+    background-image: url(../images/common/goldfish3.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    bottom: rem(54);
-    left: calc(min(7%, rem(100)));
+    background-size: contain;
+    bottom: rem(57);
+    left: min(7%, rem(94));
     min-width: rem(437);
     min-height: rem(201);
   }

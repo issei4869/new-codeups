@@ -40,13 +40,6 @@
   }
 }
 
-.voice-list__item a {
-  display: block;
-  height: 100%;
-  background-color: #fff;
-  
-}
-
 .voice-list__item-contents {
   display: flex;
   align-items: end;
@@ -72,7 +65,7 @@
 }
 
 .voice-list__item-age {
-  font-size: 12px;
+  font-size: rem(12);
   line-height: calc(18 / 12);
 
 }
@@ -82,19 +75,17 @@
   font-size: rem(12);
   line-height: calc(22 / 12);
   padding: calc(rem(4) - rem(1)) calc(rem(12) - rem(1));
-  border: 1px solid $accent-color;
+  border: rem(1) solid $accent-color;
   display: inline-block;
   flex-shrink: 0;
   @include mq(md){
-    padding-top: rem(6);
-    padding-left: rem(15);
-    padding-right: rem(16);
+    padding: calc(rem(6) - rem(1)) calc(rem(16) - rem(1)) calc(rem(6) - rem(1)) calc(rem(16) - rem(2));
   }
 }
 
 .voice-list__item-title {
   font-weight: $medium;
-  border-bottom: 1px solid $accent-color;
+  border-bottom: rem(1) solid $accent-color;
   padding-bottom: rem(4);
   line-height: calc(23 / 16);
   margin-top: rem(4);
@@ -119,16 +110,17 @@
 .voice-list__item-img img {
   width: 100%;
   aspect-ratio: 151/117;
+  object-fit: contain;
   @include mq('md') {
     aspect-ratio: 180/140;
+    opacity: 0.8;
   }
-  object-fit: contain;
 }
 
 .voice-list__item-text {
   margin-top: rem(15);
   line-height: calc(24 / 16);
   @include mq(md){
-    margin-top: rem(40);
+    margin-top: calc(rem(40) - rem(2));
   }
 }

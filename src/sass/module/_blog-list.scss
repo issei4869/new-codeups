@@ -53,6 +53,10 @@
   object-fit: contain;
 }
 
+.blog-list__item:hover .blog-list__item-img img {
+  opacity: 0.7;
+}
+
 .blog-list__item-content {
   padding: calc(rem(8) - rem(3)) rem(16) rem(24) rem(16);
   @include mq(md){
@@ -62,7 +66,7 @@
 
 .blog-list__item-date {
   font-family: $english-font-family;
-  font-size: 12px;
+  font-size: rem(12);
   line-height: calc(18 / 12);
     @include mq(md){
       
@@ -76,7 +80,7 @@
 
 .blog-list__item-title {
   font-weight: $medium;
-  border-bottom: 1px solid $accent-color;
+  border-bottom: rem(1) solid $accent-color;
   padding-bottom: calc(rem(4) - rem(1));
   @include mq(md){
     

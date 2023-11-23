@@ -126,6 +126,12 @@
   flex-shrink: 0;
 }
 
+.footer__logo:hover,
+.footer__sns-icon:hover,
+.footer__nav-item:hover {
+  opacity: 0.7;
+}
+
 .footer__nav-item a {
   max-width: rem(144);
   display: block;
@@ -162,7 +168,7 @@
   right: 0;
   width: rem(18);
   height: rem(18);
-  background-image: url(../images/common/_ヒトデ.png);
+  background-image: url(../images/common/starfish.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;

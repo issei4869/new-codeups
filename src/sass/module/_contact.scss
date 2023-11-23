@@ -12,7 +12,7 @@
   position: absolute;
   top: rem(-24);
   right: calc(50% - min(48%, rem(172)));
-  background-image: url(../images/common/キンギョハナダイ4.png);
+  background-image: url(../images/common/goldfish4.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -69,6 +69,7 @@
   padding-bottom: calc(rem(6) - rem(1));
   @include mq('md') {
     max-width: rem(440);
+    padding-bottom: rem(8);
   }
 }
 

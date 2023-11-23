@@ -44,7 +44,7 @@
   font-size: rem(20);
   line-height: calc(24 / 20);
   font-weight: $bold;
-  border-bottom: 1px solid $accent-color;
+  border-bottom: rem(1) solid $accent-color;
   padding-bottom: calc(rem(4) - rem(1));
   @include mq(md){
     font-size: rem(24);
