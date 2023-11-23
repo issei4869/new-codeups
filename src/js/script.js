@@ -80,7 +80,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // Campaign Swiper
   var service_swiper = new Swiper(".js-campaign-swiper", {
-      loop: true,
+    loop: true,
       speed: 2000,
       slidesPerView: 1.31,
       spaceBetween: 24,

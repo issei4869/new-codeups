@@ -108,7 +108,7 @@
 }
 
 .aboutus__btn {
-  margin-top: calc(rem(50) + rem(1));
+  margin-top: rem(50);
   text-align: center;
   padding-bottom: rem(3);
   @include mq('md') {
