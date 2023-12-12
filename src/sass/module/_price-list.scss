@@ -45,6 +45,7 @@
 
 .price-list__item-item {
   display: flex;
+  gap: rem(20);
   justify-content: space-between;
   @include mq('md') {
     
@@ -75,8 +76,9 @@
 
 .price-list__img img {
   width: 100%;
+  object-fit: cover;
+  aspect-ratio: 345/227;
   @include mq('md') {
     aspect-ratio: 492/746;
   }
-  object-fit: contain;
 }

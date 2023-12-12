@@ -16,8 +16,7 @@
     background-position: center center;
     background-size: cover;
     top: rem(-118);
-    //left: rem(99);
-    left: calc(min(7%, rem(99)));
+    left: calc(50% - min(48%, rem(619)));
     min-width: rem(301);
     min-height: rem(138);
   }

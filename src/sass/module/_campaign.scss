@@ -18,7 +18,7 @@
 .campaign__swiper {
   margin-top: rem(24);
   margin-right: calc(50% - 50vw);
-  width: 100vw;
+  //width: 100vw;
   @include mq('md') {
     margin-top: rem(40);
   }

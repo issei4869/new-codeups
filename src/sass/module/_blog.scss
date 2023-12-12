@@ -1,16 +1,7 @@
 @use 'global' as *;
 
 .blog {
-
-  @include mq('md') {
-    padding-top: rem(80);
-    position: relative;
-    padding-top: rem(100);
-    background-image: url(../images/common/blog-bg.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% 60.1684717208%;;
-  }
+  position: relative;
 }
 
 .blog::after {
@@ -19,7 +10,7 @@
     position: absolute;
     top: rem(25);
     //left: rem(100);
-    left: calc(min(7%, rem(100)));
+    left: calc(50% - min(48%, rem(619)));
     background-image: url(../images/common/goldfish1.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -29,20 +20,37 @@
   }
 }
 
+.blog__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  width: 100%;
+  // height: 60%;
+}
+
+.blog__bg img {
+  width: 100%;
+  height: 60%;
+  aspect-ratio: 1440 / 500;
+  object-fit: cover;
+}
+
 .blog__inner {
-  
+  position: relative;
 }
 
 .blog__inner.inner {
   padding: 0 rem(21);
+
   @include mq('md') {
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
+    padding: rem(100) $padding-pc 0;
   }
 }
 
 .blog__list {
   margin-top: calc(rem(24) + rem(1));
+  margin: 0 auto;
   @include mq('md') {
     margin-top: rem(80);
   }

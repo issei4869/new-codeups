@@ -1,7 +1,10 @@
 @use 'global' as *;
 
 .information-list {
-    
+  max-width: rem(600);
+  @include mq('md') {
+    max-width: rem(1080);
+  }
 }
 
 .information-list__item {
@@ -23,7 +26,7 @@
 .information-list__item-img img {
   width: 100%;
   aspect-ratio: 345 / 227;
-  object-fit: contain;
+  object-fit: cover;
   @include mq('md') {
     aspect-ratio: 540 / 356;
   }

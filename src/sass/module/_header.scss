@@ -24,6 +24,7 @@
   width: 100%;
   height: inherit;
   z-index: 999;
+  transition: all .3s;
   @include mq("md") {
     max-width: rem(133);
   }
@@ -84,11 +85,6 @@
   position: relative;
 }
 
-.header__nav-item a:hover {
-  color: $accent-color;
-  transition: all .3s;
-}
-
 //中心から外に線が伸びる（下部）
 .header__nav-item a::after {
   content: '';
@@ -98,8 +94,8 @@
   left: 10%;
   /*線の形状*/
   width: 80%;
-  height: rem(2);
-  background: $accent-color;
+  height: rem(1);
+  background: $base-color;
   /*アニメーションの指定*/
   transition: all .3s;
   transform: scale(0, 1);/*X方向0、Y方向1*/
@@ -195,12 +191,16 @@
 .header__drawer-contents {
   margin-top: rem(24);
   display: flex;
-  gap: rem(29);
+  //gap: rem(29);
   padding-left: rem(23);
 }
 
 .header__drawer-wrap {
-  
+  width: 50%;
+}
+
+.header__drawer-wrap + .header__drawer-wrap {
+  padding-left: rem(11);
 }
 
 .header__drawer-nav {

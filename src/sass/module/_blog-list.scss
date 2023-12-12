@@ -1,9 +1,11 @@
 @use 'global' as *;
 
 .blog-list {
+  max-width: rem(600);
   @include mq(md){
     display: flex;
     flex-wrap: wrap;
+    max-width: initial;
   }
 }
 
@@ -50,7 +52,8 @@
 .blog-list__item-img img {
   width: 100%;
   aspect-ratio: 301/201;
-  object-fit: contain;
+  object-fit: cover;
+  transition: all .3s;
 }
 
 .blog-list__item:hover .blog-list__item-img img {

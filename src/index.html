@@ -21,13 +21,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- ファビコン -->
-  <link rel="”icon”" href="確認中" />
+  <link rel="icon" href="確認中" />
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/jquery.inview.min.js"></script>
@@ -215,7 +214,9 @@
                   </div>
                   <div class="campaign-card__content">
                     <!-- カテゴリー -->
-                    <p class="campaign-card__category">ライセンス講習</p>
+                    <div class="campaign-card__meta">
+                      <p class="campaign-card__category">ライセンス講習</p>
+                    </div>
                     <!-- タイトル -->
                     <div class="campaign-card__title">ライセンス取得</div>
                       <!-- サブタイトル -->
@@ -242,7 +243,9 @@
                   </div>
                   <div class="campaign-card__content">
                     <!-- カテゴリー -->
-                    <p class="campaign-card__category">体験ダイビング</p>
+                    <div class="campaign-card__meta">
+                      <p class="campaign-card__category">体験ダイビング</p>
+                    </div>
                     <!-- タイトル -->
                     <div class="campaign-card__title">貸切体験ダイビング</div>
                       <!-- サブタイトル -->
@@ -269,7 +272,9 @@
                   </div>              
                   <div class="campaign-card__content">
                     <!-- カテゴリー -->
-                    <p class="campaign-card__category">体験ダイビング</p>
+                    <div class="campaign-card__meta">
+                      <p class="campaign-card__category">体験ダイビング</p>
+                    </div>
                     <!-- タイトル -->
                     <div class="campaign-card__title">ナイトダイビング</div>
                       <!-- サブタイトル -->
@@ -296,7 +301,9 @@
                   </div>
                   <div class="campaign-card__content">
                     <!-- カテゴリー -->
-                    <p class="campaign-card__category">ファンダイビング</p>
+                    <div class="campaign-card__meta">
+                      <p class="campaign-card__category">ファンダイビング</p>
+                    </div>
                     <!-- タイトル -->
                     <div class="campaign-card__title">貸切ファンダイビング</div>
                       <!-- サブタイトル -->
@@ -398,6 +405,9 @@
     </section>
     <!-- blogセクション -->
     <section class="layout-blog blog">
+      <div class="blog__bg u-desktop">
+        <img src="./assets/images/common/blog-bg.png" alt="Blogセクション背景画像">
+      </div>
       <div class="blog__inner inner">
         <!-- セクションタイトルの共通パーツ -->
         <div class="section-header section-header--white">
