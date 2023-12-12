@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "New CodeUps"
-AuthUserFile "/home/issei4869/issei-webproduction171.com/public_html/.htpasswd"
-require valid-user
-AddHandler cgi-script htpasswd
