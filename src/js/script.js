@@ -19,12 +19,24 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   /*****ハンバーガーメニュー*****/
   $(function () {
     $(".js-hamburger").on("click", function () {
-        $(this).toggleClass("is-open");
-        if ($(this).hasClass("is-open")) {
-            openDrawer();
-        } else {
-            closeDrawer();
-        }
+      $(this).toggleClass("is-open");
+      if ($(this).hasClass("is-open")) {
+          openDrawer();
+      } else {
+          closeDrawer();
+      }
+      // 現在のbodyタグのoverflowスタイルを確認
+      if ($("body").css("overflow") === "hidden") {
+
+        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        $("body").css({ height: "", overflow: "" });
+
+      } else {
+        
+        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        $("body").css({ height: "100%", overflow: "hidden" });
+
+      }
     });
 
     // backgroundまたはページ内リンクをクリックで閉じる
