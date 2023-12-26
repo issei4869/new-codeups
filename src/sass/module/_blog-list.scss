@@ -3,17 +3,21 @@
 .blog-list {
   max-width: rem(600);
   @include mq(md){
-    display: flex;
-    flex-wrap: wrap;
+    //display: flex;
+    display: grid;
+    // flex-wrap: wrap;
     max-width: initial;
+    gap: rem(40);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .blog-list__item {
   
   @include mq(md){
-    max-width: calc(33.333% - #{rem(40)} * 2/3);
-    width: 100%;
+    // max-width: calc(33.333% - #{rem(40)} * 2/3);
+    // width: 100%;
+
   }
 }
 
@@ -21,7 +25,7 @@
   margin-top: rem(40);
   @include mq(md){
     margin-top: 0;
-    margin-left: rem(40);
+    //margin-left: rem(40);
   }
 }
 
