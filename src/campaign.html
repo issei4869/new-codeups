@@ -162,43 +162,25 @@
     <!-- MVセクション -->
     <section class="mv">
       <div class="mv__inner">
-        <div class="mv__title-wrap">
-          <h2 class="mv__main-title">DIVING</h2>
-          <p class="mv__sub-title">into the ocean</p>
+        <div class="mv__title-wrap sub-mv__title-wrap">
+          <h2 class="mv__main-title sub-mv__main-title">Campaign</h2>
         </div>
-        <div class="mv__swiper swiper js-mv-swiper">
+        <div class="mv__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <picture class="swiper-img">
-                <source media="(min-width: 376px)" srcset="./assets/images/common/mv1_pc.jpg">
-                <img src="./assets/images/common/mv1_sp.jpg" alt="亀の画像">
+                <source media="(min-width: 376px)" srcset="./assets/images/common/sub-campaign-mv1_pc.jpg">
+                <img src="./assets/images/common/sub-campaign-mv1_sp.jpg" alt="亀の画像">
               </picture>    
-            </div>
-            <div class="swiper-slide">
-              <picture class="swiper-img">
-                <source media="(min-width: 376px)" srcset="./assets/images/common/mv2_pc.jpg">
-                <img src="./assets/images/common/mv2_sp.jpg" alt="亀とダイバー2人の画像">
-              </picture>  
-            </div>
-            <div class="swiper-slide">
-              <picture class="swiper-img">
-                <source media="(min-width: 376px)" srcset="./assets/images/common/mv3_pc.jpg">
-                <img src="./assets/images/common/mv3_sp.jpg" alt="海の画像">
-              </picture>  
-            </div>
-            <div class="swiper-slide">
-              <picture class="swiper-img">
-                <source media="(min-width: 376px)" srcset="./assets/images/common/mv4_pc.jpg">
-                <img src="./assets/images/common/mv4_sp.jpg" alt="南国のような海と砂浜の画像">
-              </picture>  
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- パンくず -->
     <div class="layout-breadcrumb breadcrumb">
-      <div class="breadcrumb__inner">
+      <div class="breadcrumb__inner inner">
         <!-- Breadcrumb NavXTで出力される部分 ここから -->
         <span>
           <a href="#">
@@ -212,31 +194,35 @@
         <!-- Breadcrumb NavXTで出力される部分 ここまで -->
       </div>
     </div>
+
     <!-- Campaignセクション -->
-    <section class="layout-campaign campaign">
-      <div class="campaign__inner inner">
-        <!-- セクションタイトルの共通パーツ -->
-        <div class="section-header">
-          <div class="section-header__title"><span>C</span>ampaign</div>
-          <h2 class="section-header__subtitle">キャンペーン</h2>
+    <section class="layout-sub-campaign sub-campaign">
+      <div class="sub-campaign__inner inner">
+        <div class="tab">
+          <ul class="tab__menu">
+            <li class="tab__menu-item is-active" data-number="tab01">ALL</li>
+            <li class="tab__menu-item" data-number="tab02">ライセンス講習</li>
+            <li class="tab__menu-item" data-number="tab03">ファンダイビング</li>
+            <li class="tab__menu-item" data-number="tab04">体験ダイビング</li>
+          </ul>
         </div>
-        <div class="campaign__swiper campaign-swiper">
-          <div class="swiper js-campaign-swiper">
-            <ul class="swiper-wrapper campaign-swiper__card">
-              <li class="campaign-card swiper-slide">
+        <!-- <div class="campaign__swiper campaign-swiper">
+          <div class="swiper js-campaign-swiper"> -->
+            <ul class="sub-campaign__card">
+              <li class="campaign-card campaign-card--sub">
                 <div class="campaign-card__item">
                   <div class="campaign-card__img">
                     <img src="./assets/images/common/campaign1.jpg" alt="多くの種類の魚たちの画像">
                   </div>
-                  <div class="campaign-card__content">
+                  <div class="campaign-card__content campaign-card__content--sub">
                     <!-- カテゴリー -->
                     <div class="campaign-card__meta">
                       <p class="campaign-card__category">ライセンス講習</p>
                     </div>
                     <!-- タイトル -->
-                    <div class="campaign-card__title">ライセンス取得</div>
-                      <!-- サブタイトル -->
-                    <div class="campaign-card__wrapper">
+                    <div class="campaign-card__title campaign-card__title--sub">ライセンス取得</div>
+                    <!-- サブタイトル -->
+                    <div class="campaign-card__wrapper campaign-card__wrapper--sub">
                       <div class="campaign-card__subtitle">
                         全部コミコミ(お一人様)
                       </div>
@@ -249,23 +235,42 @@
                         </div>
                       </div>
                     </div>
+                    <!-- 下層ページに追加 -->
+                    <div class="campaign-card__sub">
+                      <div class="campaign-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </div>
+                      <div class="campaign-card__date">
+                        2023/6/1-9/30
+                      </div>
+                      <div class="campaign-card__comment">
+                        ご予約・お問い合わせはコチラ
+                      </div>
+                      <div class="campaign-card__btn">
+                        <a href="#" class="btn">
+                          <span>Contact us</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
               </li>
-              <li class="campaign-card swiper-slide">
+              <li class="campaign-card campaign-card--sub">
                 <div class="campaign-card__item">
                   <div class="campaign-card__img">
                     <img src="./assets/images/common/campaign2.jpg" alt="孤島の画像">
                   </div>
-                  <div class="campaign-card__content">
+                  <div class="campaign-card__content campaign-card__content--sub">
                     <!-- カテゴリー -->
                     <div class="campaign-card__meta">
                       <p class="campaign-card__category">体験ダイビング</p>
                     </div>
                     <!-- タイトル -->
-                    <div class="campaign-card__title">貸切体験ダイビング</div>
-                      <!-- サブタイトル -->
-                    <div class="campaign-card__wrapper">
+                    <div class="campaign-card__title campaign-card__title--sub">貸切体験ダイビング</div>
+                    <!-- サブタイトル -->
+                    <div class="campaign-card__wrapper campaign-card__wrapper--sub">
                       <div class="campaign-card__subtitle">
                         全部コミコミ(お一人様)
                       </div>
@@ -278,23 +283,41 @@
                         </div>
                       </div>
                     </div>
+                    <!-- 下層ページに追加 -->
+                    <div class="campaign-card__sub">
+                      <div class="campaign-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </div>
+                      <div class="campaign-card__date">
+                        2023/6/1-9/30
+                      </div>
+                      <div class="campaign-card__comment">
+                        ご予約・お問い合わせはコチラ
+                      </div>
+                      <div class="campaign-card__btn">
+                        <a href="#" class="btn">
+                          <span>Contact us</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="campaign-card swiper-slide">
+              <li class="campaign-card campaign-card--sub">
                 <div class="campaign-card__item">
                   <div class="campaign-card__img">
                     <img src="./assets/images/common/campaign3.jpg" alt="クラゲの画像">
                   </div>              
-                  <div class="campaign-card__content">
+                  <div class="campaign-card__content campaign-card__content--sub">
                     <!-- カテゴリー -->
                     <div class="campaign-card__meta">
                       <p class="campaign-card__category">体験ダイビング</p>
                     </div>
                     <!-- タイトル -->
-                    <div class="campaign-card__title">ナイトダイビング</div>
-                      <!-- サブタイトル -->
-                    <div class="campaign-card__wrapper">
+                    <div class="campaign-card__title campaign-card__title--sub">ナイトダイビング</div>
+                    <!-- サブタイトル -->
+                    <div class="campaign-card__wrapper campaign-card__wrapper--sub">
                       <div class="campaign-card__subtitle">
                         全部コミコミ(お一人様)
                       </div>
@@ -307,23 +330,41 @@
                         </div>
                       </div>
                     </div>
+                    <!-- 下層ページに追加 -->
+                    <div class="campaign-card__sub">
+                      <div class="campaign-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </div>
+                      <div class="campaign-card__date">
+                        2023/6/1-9/30
+                      </div>
+                      <div class="campaign-card__comment">
+                        ご予約・お問い合わせはコチラ
+                      </div>
+                      <div class="campaign-card__btn">
+                        <a href="#" class="btn">
+                          <span>Contact us</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="campaign-card swiper-slide">
+              <li class="campaign-card campaign-card--sub">
                 <div class="campaign-card__item">
                   <div class="campaign-card__img">
                     <img src="./assets/images/common/campaign4.jpg" alt="多くいるダイバーの画像">
                   </div>
-                  <div class="campaign-card__content">
+                  <div class="campaign-card__content campaign-card__content--sub">
                     <!-- カテゴリー -->
                     <div class="campaign-card__meta">
                       <p class="campaign-card__category">ファンダイビング</p>
                     </div>
                     <!-- タイトル -->
-                    <div class="campaign-card__title">貸切ファンダイビング</div>
-                      <!-- サブタイトル -->
-                    <div class="campaign-card__wrapper">
+                    <div class="campaign-card__title campaign-card__title--sub">貸切ファンダイビング</div>
+                    <!-- サブタイトル -->
+                    <div class="campaign-card__wrapper campaign-card__wrapper--sub">
                       <div class="campaign-card__subtitle">
                         全部コミコミ(お一人様)
                       </div>
@@ -336,24 +377,50 @@
                         </div>
                       </div>
                     </div>
+                    <!-- 下層ページに追加 -->
+                    <div class="campaign-card__sub">
+                      <div class="campaign-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </div>
+                      <div class="campaign-card__date">
+                        2023/6/1-9/30
+                      </div>
+                      <div class="campaign-card__comment">
+                        ご予約・お問い合わせはコチラ
+                      </div>
+                      <div class="campaign-card__btn">
+                        <a href="#" class="btn">
+                          <span>Contact us</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="campaign-swiper__button-wrap">
-          <div class="swiper-button-prev js-campaign-arrow"></div>
-          <div class="swiper-button-next js-campaign-arrow"></div>
-        </div>
-        <div class="campaign__btn">
-          <a href="#" class="btn">
-            <span>View more</span>
-          </a>
-        </div>
+          <!-- </div>
+        </div> -->
       </div>
     </section>
+
+    <!-- ページネーションボタン（共通パーツ） -->
+    <!-- <div class="layout-pagenavi pagenavi"> -->
+      <!-- <div class="pagenavi__inner"> -->
+        <!-- WP-PageNaviで出力される部分 ここから -->
+        <!-- <div class='wp-pagenavi' role='navigation'> -->
+          <!-- <a class="previouspostslink" rel="prev" href="#">&nbsp;&lt;&nbsp;</a>
+          <span class='current'>1</span>
+          <a class="page larger" href="#">2</a>
+          <a class="page larger" href="#">3</a>
+          <a class="page larger" href="#">4</a>
+          <a class="page larger" href="#">5</a>
+          <a class="page larger" href="#">6</a>
+          <a class="nextpostslink" rel="next" href="#">&nbsp;&gt;&nbsp;</a>
+        </div> -->
+        <!-- WP-PageNaviで出力される部分 ここまで -->
+      <!-- </div> -->
+    <!-- </div> -->
     
     <!-- Contactセクション -->
     <section class="layout-contact contact">

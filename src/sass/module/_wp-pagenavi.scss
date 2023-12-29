@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.wp-pagenavi {
+	clear: both;
+	text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: rem(12);
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+  padding: rem(9) rem(14) rem(10);
+  line-height: calc(19 / 16);
+  font-family: $english-second-font-family;
+  font-weight: $bold;
+  white-space: nowrap;
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  background-color: $base-color;
+  transition: .3s;
+}
+
+.wp-pagenavi a:hover {
+	color: $base-color;
+	background-color: $accent-color;
+	border-color: $accent-color;
+    opacity: 1;
+}
+
+.wp-pagenavi .current {
+	color: $base-color;
+	background-color: $accent-color;
+	border-color: $accent-color;
+}
+
+.previouspostslink {
+  
+}
+
+.nextpostslink {
+
+}

@@ -5,6 +5,13 @@
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, .25);
 }
 
+.campaign-card--sub {
+  max-width: rem(280);
+  @include mq('md') {
+    max-width: rem(520);
+  }
+}
+
 .campaign-card__item {
   display: flex;
   flex-direction: column;
@@ -37,6 +44,14 @@
   }
 }
 
+.campaign-card__content--sub {
+  @include mq('md') {
+    padding-left: rem(24);
+    padding-right: rem(24);
+    padding-bottom: rem(43);
+  }
+}
+
 .campaign-card__category {
   color: $accent-color;
   font-size: rem(12);
@@ -65,10 +80,24 @@
   }
 }
 
+.campaign-card__title--sub {
+  @include mq('md') {
+    font-size: rem(24);
+    line-height: calc(35 / 24);
+    padding-bottom: calc(rem(4) - rem(1));
+  }
+}
+
 .campaign-card__wrapper {
   margin-top: rem(8);
   @include mq('md') {
     margin-top: rem(16);
+  }
+}
+
+.campaign-card__wrapper--sub {
+  @include mq('md') {
+    margin-top: rem(24);
   }
 }
 
@@ -143,5 +172,57 @@
   font-size: rem(32);
   @include mq('md') {
     font-size: rem(40);
+  }
+}
+
+.campaign-card__sub{
+  display: none;
+  @include mq('md') {
+    display: block;
+    margin-top: rem(24);
+  }
+}
+
+.campaign-card__text {
+  @include mq('md') {
+    line-height: calc(24 / 16);
+  }
+}
+
+.campaign-card__date,
+.campaign-card__comment,
+.campaign-card__btn {
+  @include mq('md') {
+    text-align: center;
+  }
+}
+
+.campaign-card__date,
+.campaign-card__comment {
+  @include mq('md') {
+    color: $accent-color;
+  }
+}
+
+.campaign-card__date {
+  @include mq('md') {
+    margin-top: rem(32);
+    font-weight: $bold;
+    font-family: $english-second-font-family;
+    line-height: calc(18 / 16);
+  }
+}
+
+.campaign-card__comment {
+  @include mq('md') {
+    margin-top: rem(7);
+    font-size: rem(14);
+    line-height: calc(18 / 14);
+  }
+}
+
+.campaign-card__btn {
+  @include mq('md') {
+    margin-top: rem(16);
   }
 }

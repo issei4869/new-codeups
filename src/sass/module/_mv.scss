@@ -23,6 +23,13 @@
   text-align: center;
 }
 
+.sub-mv__title-wrap {
+  @include mq('md') {
+    top: 61%;
+    transform: translate(-50%,-61%);
+  }
+}
+
 .mv__main-title {
   font-size: rem(40);
   color: $base-color;
@@ -34,6 +41,11 @@
     font-size: rem(80);
     line-height: calc(100 / 80);
   }
+}
+
+.sub-mv__main-title {
+  letter-spacing: initial;
+  text-indent: initial;
 }
 
 .mv__sub-title {
