@@ -1,5 +1,27 @@
 @use 'global' as *;
 
+.gallery {
+  @include mq('md') {
+    position: relative;
+  }
+}
+
+.gallery::before {
+  @include mq('md') {
+    content: "";
+    position: absolute;
+    top: rem(-75);
+    right: calc(50% - min(48%, rem(635)));
+    background-image: url(../images/common/goldfish4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: rem(301);
+    min-height: rem(138);
+  }
+}
+
+
 .gallery__inner {
   // margin: auto;
   // padding: 0 rem(20);

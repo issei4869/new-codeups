@@ -4,34 +4,42 @@
   display: grid;
   gap: rem(8);
   @include mq(md) {
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: 1fr rem(80) 1fr;
     grid-auto-flow: dense;
   }
 }
 
 .gallery-list__item {
   @include mq(md) {
-    grid-column: span 5;
-    grid-row: span 1;
+    grid-column: span 2;
+    //grid-row: span 2;
+    //min-width: rem(580);
   }
 }
 
 .gallery-list__item:nth-of-type(6n+1),
 .gallery-list__item:nth-of-type(6n+6) {
   @include mq(md) {
-    grid-column: span 4;
+    grid-column: span 1;
     grid-row: span 2;
+    //min-width: rem(492);
   }
 }
 
 .gallery-list__item img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 520/400;
+  aspect-ratio: 580/369;
   object-fit: cover;
+  @include mq('md') {
+    //max-width: rem(580);
+  }
 }
 
 .gallery-list__item:nth-of-type(6n+1) img,
 .gallery-list__item:nth-of-type(6n+6) img {
-  aspect-ratio: 300/440;
+  aspect-ratio: 492/746;
+  @include mq('md') {
+    //max-width: rem(492);
+  }
 }
