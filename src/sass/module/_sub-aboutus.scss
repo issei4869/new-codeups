@@ -29,18 +29,13 @@
 }
 
 .sub-aboutus__wrap {
-  
-  margin-top: calc(rem(50) - rem(1));
   @include mq('md') {
     position: relative;
-    margin-top: rem(120);
   }
 }
 
 .sub-aboutus__img-left {
-  display: none;
   @include mq('md') {
-    display: block;
     position: absolute;
     left: 0;
     top: rem(-80);
@@ -69,12 +64,12 @@
 .sub-aboutus__content {
   position: absolute;
   top: rem(24);
-  left: calc((200 / 1080 * 100%));
+  left: calc((35 / 345 * 100%));
   z-index: 2;
   @include mq('md') {
     display: flex;
     top: rem(120);
-    left: calc((200 / 1080 * 100%));
+    left: calc((199 / 1080 * 100%));
     //margin-top: 0;
   }
 }
@@ -92,7 +87,6 @@
 }
 
 .sub-aboutus__text-wrap {
-  margin-top: rem(164);
   @include mq('md') {
     margin-top: rem(26);
     padding: 0 rem(40);
@@ -101,10 +95,12 @@
 
 .sub-aboutus__text {
   line-height: calc(24 / 16);
+  margin-top: rem(40);
   @include mq('md') {
     color: $base-color;
     max-width: rem(400);
     width: 100%;
+    margin-top: 0;
   }
 }
 
