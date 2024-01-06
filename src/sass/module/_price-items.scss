@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.price-items__item {
+  display: flex;
+  gap: rem(20);
+  justify-content: space-between;
+  @include mq('md') {
+    
+  }
+}
+
+.price-items__item + .price-items__item {
+  margin-top: rem(8);
+}

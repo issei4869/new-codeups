@@ -54,6 +54,23 @@
   }
 }
 
+.price__img {
+  width: 100%;
+  @include mq('md') {
+    max-width: rem(492);
+    margin-left: calc(rem(93) + rem(1));
+  }
+}
+
+.price__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 345/227;
+  @include mq('md') {
+    aspect-ratio: 492/746;
+  }
+}
+
 .price__btn {
   margin-top: rem(40);
   text-align: center;

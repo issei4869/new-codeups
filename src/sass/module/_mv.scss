@@ -60,13 +60,13 @@
 }
 
 .mv__swiper,
-.mv__swiper .swiper-img,
-.mv__swiper .swiper-img img {
+.mv__swiper-img,
+.mv__swiper-img img {
   height: inherit;
   min-height: inherit;
 }
 
-.mv__swiper .swiper-img img {
+.mv__swiper-img img {
   width: 100%;
   object-fit: cover;
 }

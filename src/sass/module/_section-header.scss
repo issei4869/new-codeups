@@ -16,28 +16,8 @@
   }
 }
 
-.section-header__title--white {
-  @include mq('md') {
-    color: $base-color;
-  }
-}
-
-.section-header__title--contact {
-  font-size: rem(80);
-  line-height: 1;
-  @include mq('md') {
-    font-size: rem(80);
-  }
-}
-
-.section-header__title span {
+.section-header__title::first-letter {
   color: $accent-color;
-}
-
-.section-header__title--white span {
-  @include mq('md') {
-    color: #DDF0F1;
-  }
 }
 
 .section-header__subtitle {
@@ -49,15 +29,42 @@
   color: $accent-color;
   text-align: center;
   padding-bottom: rem(4);
-  @include mq('md') {
+    @include mq('md') {
     margin-top: rem(8);
     padding-bottom: 0;
   }
 }
 
-.section-header__subtitle--white {
+.section-header--white {
+  
+  .section-header__title {
+    
+  }
+
+  .section-header__title::first-letter {
+    @include mq('md') {
+      color: #DDF0F1;
+    }
+  }
+  
+  .section-header__subtitle {
+    @include mq('md') {
+      color: $base-color;
+    }
+  }
   @include mq('md') {
     color: $base-color;
+  }
+
+}
+
+
+
+.section-header__title--contact {
+  font-size: rem(80);
+  line-height: 1;
+  @include mq('md') {
+    font-size: rem(80);
   }
 }
 

@@ -4,27 +4,32 @@
   overflow: hidden;
 }
 
-.campaign-swiper__card {
+.campaign-swiper__wrapper {
   padding-left: rem(2);
   padding-bottom: rem(3);
   //position: relative;
 }
 
-.campaign-swiper__button-wrap {
+.campaign-swiper__slide {
+  height: auto;
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, .25);
+}
+
+.campaign-swiper__button {
   //margin-top: rem(70);
   display: flex;
   justify-content: left;
   // position: relative;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.campaign-swiper__prev,
+.campaign-swiper__next {
   min-width: rem(80);
   min-height: rem(80);
 }
 
-.campaign-swiper__button-wrap .swiper-button-prev,
-.campaign-swiper__button-wrap .swiper-button-next {
+.campaign-swiper__button .campaign-swiper__prev,
+.campaign-swiper__button .campaign-swiper__next {
   position: absolute;
   top: 0;
   top: 22px;
@@ -32,16 +37,16 @@
   min-height: rem(80);
 }
 
-.campaign-swiper__button-wrap .swiper-button-prev {
+.campaign-swiper__button .campaign-swiper__prev {
   left: 76.5%;
 }
 
-.campaign-swiper__button-wrap .swiper-button-next {
+.campaign-swiper__button .campaign-swiper__next {
   right: 2.25%;
 }
 
-.campaign-swiper__button-wrap .swiper-button-prev::after,
-.campaign-swiper__button-wrap .swiper-button-next::after {
+.campaign-swiper__button .campaign-swiper__prev::after,
+.campaign-swiper__button .campaign-swiper__next::after {
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
@@ -49,15 +54,15 @@
   height: rem(80);
 }
 
-.campaign-swiper__button-wrap .swiper-button-prev::after {
+.campaign-swiper__button .campaign-swiper__prev::after {
   background-image: url(../images/common/swiperbtn1.png);
 }
 
-.campaign-swiper__button-wrap .swiper-button-next::after {
+.campaign-swiper__button .campaign-swiper__next::after {
   background-image: url(../images/common/swiperbtn2.png);
 }
 
-.campaign-swiper__button-wrap .swiper-button-prev:hover::after,
-.campaign-swiper__button-wrap .swiper-button-next:hover::after {
+.campaign-swiper__button .campaign-swiper__prev:hover::after,
+.campaign-swiper__button .campaign-swiper__next:hover::after {
   opacity: 0.5;
 }
