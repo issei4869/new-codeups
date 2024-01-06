@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.tab__menu {
+.campaign-tab__menu {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, rem(162));
@@ -13,7 +13,7 @@
   }
 }
 
-.tab__menu-item {
+.campaign-tab__menu-item {
   display: inline-block;
   flex-shrink: 0;
   padding: rem(5) 0;
@@ -31,7 +31,7 @@
   }
 }
 
-.tab__menu-item.is-active {
+.campaign-tab__menu-item.is-active {
   color: $base-color;
   background-color: $accent-color;
 }

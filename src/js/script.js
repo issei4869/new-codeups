@@ -138,6 +138,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
   });
+
+  /*****Tab切り替え*****/
+  $('.js-tab-menu').on('click', function () {
+    $('.js-tab-menu').removeClass('is-active');
+    $('.js-tab-content').removeClass('is-active');
+    $(this).addClass('is-active');
+    var number = $(this).data("number");
+    $('#' + number).addClass('is-active');
+  });
     
 
 });
