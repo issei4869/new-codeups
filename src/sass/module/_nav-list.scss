@@ -1,10 +1,7 @@
 @use 'global' as *;
 
 .nav-list {
-  @include mq('md') {
-    display: flex;
-    gap: rem(142);
-  }
+  
 }
 
 .nav-list__items:nth-child(2n) {

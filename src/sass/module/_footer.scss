@@ -105,7 +105,10 @@
 
 .footer__wrap {
   width: 50%;
-  
+  @include mq('md') {
+    display: flex;
+    gap: rem(142);
+  }
 }
 
 .footer__wrap + .footer__wrap {
