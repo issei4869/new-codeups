@@ -1,37 +1,16 @@
 @use 'global' as *;
 
-.campaign-tab__menu {
+.category-tab {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, rem(162));
-  row-gap: rem(16);
-  column-gap: rem(21);
+  row-gap: rem(40);
   @include mq('md') {
-    grid-template-columns: repeat(4, rem(162));
-    justify-content: left;
-    column-gap: rem(32);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(80);
+    column-gap: rem(40);
   }
 }
 
-.campaign-tab__menu-item {
-  display: inline-block;
-  flex-shrink: 0;
-  padding: rem(5) 0;
-  // min-width: rem(100);
-  // width: fit-content;
-  font-size: rem(14);
-  line-height: calc(22 / 14);
-  color: $accent-color;
-  border: 1px solid $accent-color;
-  background-color: $base-color;
-  text-align: center;
-  cursor: pointer;
-  @include mq(md){
-    
-  }
-}
-
-.campaign-tab__menu-item.is-active {
-  color: $base-color;
-  background-color: $accent-color;
+.category-tab__items {
+  
 }

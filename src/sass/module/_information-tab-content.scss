@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+.information-tab-content {
+  
+}
+
+.information-tab-content__list {
+  display: none;
+}
+
+.information-tab-content__list.is-active {
+  animation: fade .3s;
+  display: block;
+  border: 2px solid #408F95;
+  padding: rem(22);
+  @include mq('md') {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(48);
+    padding: rem(16) rem(22) rem(20);
+  }
+}
+
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

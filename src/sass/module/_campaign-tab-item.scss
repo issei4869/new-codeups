@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.category-tab-item {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: rem(5) 0;
+  // min-width: rem(100);
+  // width: fit-content;
+  font-size: rem(14);
+  line-height: calc(22 / 14);
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  background-color: $base-color;
+  text-align: center;
+  cursor: pointer;
+  @include mq(md){
+    
+  }
+}
+
+.category-tab-item.is-active {
+  color: $base-color;
+  background-color: $accent-color;
+}

@@ -1,116 +1,12 @@
 @use 'global' as *;
 
-.information-tab__menu {
-  display: grid;
-  //justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: rem(19);
-  @include mq('md') {
-    column-gap: rem(90);
-  }
-}
-
-.information-tab__menu-item {
-  padding: rem(10) 0;
-  flex-shrink: 0;
-  position: relative;
-  color: $accent-color;
-  background-color: #DDF0F1;
-  //text-align: center;
-  cursor: pointer;
-  box-shadow: rem(2) rem(2) rem(4) 0 rgba(0, 0, 0, .25);
-  @include mq('md') {
-    display: flex;
-    gap: rem(8);
-    justify-content: center;
-    align-items: center;
-    box-shadow: none;
-    padding: rem(13) 0;
-  }
-}
-
-.information-tab__menu-item span {
-  position: relative;
-  font-size: rem(14);
-  line-height: calc(20 / 14);
-  @include mq('md') {
-    font-size: rem(24);
-    line-height: calc(35 / 24);
-  }
-}
-
-//画像
-.information-tab__menu-item span img {
-  width: rem(64);
-  height: rem(64);
-}
-
-// .information-tab__menu-item::before {
-//   @include mq('md') {
-//     content: "";
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     left: rem(10);
-//     right: 0;
-//     width: rem(64);
-//     height: rem(64);
-//     background-repeat: no-repeat;
-//     background-position: center center;
-//     background-size: contain;
-//   }
-// }
-
-// .information-tab__menu-item:nth-child(1)::before {
-//   @include mq('md') {
-//     background-image: url(../images/common/sub-information-tab-img1.png);
-//   }
-// }
-// .information-tab__menu-item:nth-child(2)::before {
-//   @include mq('md') {
-//     background-image: url(../images/common/sub-information-tab-img2.png);
-//   }
-// }
-// .information-tab__menu-item:nth-child(3)::before {
-//   @include mq('md') {
-//     background-image: url(../images/common/sub-information-tab-img3.png);
-//   }
-// }
-
-.information-tab__menu-item span svg path {
-  fill: $accent-color;
-}
-
-.information-tab__menu-item.is-active span svg path {
-  fill: $base-color;
-}
-
-.information-tab__menu-item.is-active {
-  color: $base-color;
-  background-color: $accent-color;
+.information-tab__items {
+  
 }
 
 .information-tab__content {
-  margin-top: prem(20);
-}
-
-.information-tab__content-item {
-  padding: prem(25);
-  display: none;
-  background-color: #fff;
-  border: 1px solid #73B2C8;
-}
-
-.information-tab__content-item.is-active {
-  display: block;
-  animation: fade .3s;
-}
-
-@keyframes fade {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
+  margin-top: rem(16);
+  @include mq('md') {
+    margin-top: rem(24);
   }
 }

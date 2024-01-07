@@ -115,15 +115,7 @@
 }
 
 .contact__img {
-  // width: 100%;
-  // max-width: rem(295);
-  // margin: 0 auto;
-  // margin-top: rem(16);
-  // @include mq('md') {
-  //   max-width: rem(273);
-  //   margin-top: 0;
-  //   margin-left: rem(21); 
-  // }
+  
 }
 
 .contact__map {
@@ -146,15 +138,6 @@
     aspect-ratio: 273/148;
   }
 }
-
-// .contact__img img {
-//   width: 100%;
-//   aspect-ratio: 295/160;
-//   @include mq('md') {
-//     aspect-ratio: 273/148;
-//   }
-//   object-fit: contain;
-// }
 
 .contact__inquiry {
   margin-top: rem(40);

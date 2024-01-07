@@ -1,0 +1,52 @@
+@use 'global' as *;
+
+.information-tab-items {
+  display: grid;
+  //justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: rem(19);
+  @include mq('md') {
+    column-gap: rem(90);
+  }
+}
+
+//画像
+.information-tab-items__item span img {
+  width: rem(64);
+  height: rem(64);
+}
+
+.information-tab-items__item span svg path {
+  fill: $accent-color;
+}
+
+.information-tab-items__item.is-active span svg path {
+  fill: $base-color;
+}
+
+.information-tab-items__item.is-active {
+  color: $base-color;
+  background-color: $accent-color;
+}
+
+
+.information-tab__content-item {
+  padding: rem(25);
+  display: none;
+  background-color: #fff;
+  border: 1px solid #73B2C8;
+}
+
+.information-tab__content-item.is-active {
+  display: block;
+  animation: fade .3s;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

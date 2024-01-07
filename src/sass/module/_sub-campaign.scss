@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.sub-campaign__card::before {
+.sub-campaign::before {
   content: "";
   position: absolute;
   background-image: url(../images/common/goldfish2.png);
@@ -23,15 +23,7 @@
   }
 }
 
-.sub-campaign__card {
+.sub-campaign__items {
   margin-top: rem(40);
-  display: grid;
   //text-align: center;
-  justify-content: center;
-  row-gap: rem(40);
-  @include mq('md') {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: rem(80);
-    column-gap: rem(40);
-  }
 }

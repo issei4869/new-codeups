@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, .25);
 }
 
 .campaign-card__img {
@@ -141,6 +142,7 @@
   }
 }
 
+/*****以下下層ページに追加*****/
 .campaign-card__sub{
   display: none;
   @include mq('md') {
