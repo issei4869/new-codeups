@@ -24,6 +24,58 @@
   }
 }
 
+.campaign__button {
+  //margin-top: rem(70);
+  display: flex;
+  justify-content: left;
+  // position: relative;
+}
+
+.campaign__prev,
+.campaign__next {
+  min-width: rem(80);
+  min-height: rem(80);
+}
+
+.campaign__button .campaign__prev,
+.campaign__button .campaign__next {
+  position: absolute;
+  top: 0;
+  top: 22px;
+  min-width: rem(80);
+  min-height: rem(80);
+}
+
+.campaign__button .campaign__prev {
+  left: 76.5%;
+}
+
+.campaign__button .campaign__next {
+  right: 2.25%;
+}
+
+.campaign__button .campaign__prev::after,
+.campaign__button .campaign__next::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(80);
+  height: rem(80);
+}
+
+.campaign__button .campaign__prev::after {
+  background-image: url(../images/common/swiperbtn1.png);
+}
+
+.campaign__button .campaign__next::after {
+  background-image: url(../images/common/swiperbtn2.png);
+}
+
+.campaign__button .campaign__prev:hover::after,
+.campaign__button .campaign__next:hover::after {
+  opacity: 0.5;
+}
+
 .campaign__btn {
   margin-top: calc(rem(40) - rem(3));
   text-align: center;
