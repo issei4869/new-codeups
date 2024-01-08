@@ -1,0 +1,34 @@
+@use 'global' as *;
+
+.blog-sidebar-card {
+  padding: rem(16);
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+}
+
+.blog-sidebar-card__popularity {
+
+}
+
+.blog-sidebar-card__link {
+  cursor: pointer;
+}
+
+.blog-sidebar-card__wrap {
+  display: flex;
+  gap: rem(16);
+}
+
+.blog-sidebar-card__img {
+  width: 100%;
+  max-width: rem(121);
+}
+
+.blog-sidebar-card__img img {
+  width: 100%;
+  aspect-ratio: 121/90;
+  object-fit: cover;
+}
+
+.blog-sidebar-card__content {
+
+}

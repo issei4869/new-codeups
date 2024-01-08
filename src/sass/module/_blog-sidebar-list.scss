@@ -1,0 +1,13 @@
+@use 'global' as *;
+
+.blog-sidebar-list {
+
+}
+
+.blog-sidebar-list__card {
+
+}
+
+.blog-sidebar-list__card + .blog-sidebar-list__card {
+  margin-top: rem(24);
+}
