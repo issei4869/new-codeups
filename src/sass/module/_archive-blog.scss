@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.archive-blog {
+
+}
+
+.archive-blog__inner {
+  @include mq(md){
+    display: flex;
+  }
+}
+
+.archive-blog__list {
+  border-top: 1px solid rgba($color: #234F5E, $alpha: .2);
+  @include mq(md) {
+    flex-wrap: wrap;
+    border-top: none;
+    //width: calc(706 / 1080);
+  }
+}
+
+
+/*****サイドバー*****/
+.archive-blog__sidebar {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(80);
+  }
+}
+
