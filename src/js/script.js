@@ -147,7 +147,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     var number = $(this).data("number");
     $('#' + number).addClass('is-active');
   });
-    
+  
+  /*****アコーディオン*****/
+  $('.js-faq-question').on('click', function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass('is-open');
+  });
 
 });
 

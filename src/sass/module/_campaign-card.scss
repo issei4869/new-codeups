@@ -61,6 +61,10 @@
   }
 }
 
+.campaign-card__title--sidebar {
+  text-align: center;
+}
+
 .campaign-card__wrapper {
   margin-top: rem(8);
   @include mq('md') {
