@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.sidebar-header {
+  position: relative;
+  display: flex;
+  gap: rem(8);
+  align-items: center;
+  padding-left: rem(16);
+}
+
+.sidebar-header__icon {
+  
+}
+
+.sidebar-header__icon::before {
+  content: "";
+  position: absolute;
+  width: rem(8);
+  height: rem(50);
+  background-color: $accent-color;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-header__icon svg {
+  width: rem(50);
+  height: rem(50);
+}
+
+.sidebar-header__icon svg path {
+  fill: $font-color;
+}
+
+.sidebar-header__title {
+  font-size: rem(24);
+  line-height: calc(35 / 24);
+}

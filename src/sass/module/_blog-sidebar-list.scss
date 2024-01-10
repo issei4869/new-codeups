@@ -1,13 +1,13 @@
 @use 'global' as *;
 
-.blog-sidebar-list {
+.blog-sidebar-cards {
 
 }
 
-.blog-sidebar-list__card {
+.blog-sidebar-cards__card {
 
 }
 
-.blog-sidebar-list__card + .blog-sidebar-list__card {
+.blog-sidebar-cards__card + .blog-sidebar-cards__card {
   margin-top: rem(24);
 }

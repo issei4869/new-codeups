@@ -70,10 +70,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     fadeEffect: {
       crossFade: true,
     },
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
   });
 
   // Campaignリサイズ処理（PC時のみ矢印表示）
@@ -96,10 +96,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       speed: 2000,
       slidesPerView: 1.27,
       spaceBetween: 24,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // },
       breakpoints: {
         768: {
           slidesPerView: 3.485,
