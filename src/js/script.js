@@ -148,6 +148,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('#' + number).addClass('is-active');
   });
   
+  /*****トグルリスト*****/
+  $('.js-toggle-question').on('click', function () {
+      $(this).nextAll().slideToggle();
+      $(this).toggleClass('is-open');
+  });
+
   /*****アコーディオン*****/
   $('.js-faq-question').on('click', function () {
       $(this).next().slideToggle();

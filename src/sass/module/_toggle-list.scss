@@ -1,0 +1,66 @@
+@use 'global' as *;
+
+.toggle-list__item {
+  
+}
+
+.toggle-list__item + .toggle-list__item {
+  margin-top: rem(4);
+}
+
+.toggle-list__item-question,
+.toggle-list__item-answer {
+  
+  color: $accent-color;
+  font-size: rem(24);
+  line-height: calc(35 / 24);
+  padding-left: rem(36);
+  cursor: pointer;
+}
+
+.toggle-list__item-question {
+  position: relative;
+  // text-indent: rem(-20);
+  cursor: pointer;
+  @include mq(md){
+  }
+}
+
+.toggle-list__item-answer {
+  position: relative;
+  margin-left: rem(24);
+  padding: rem(4) 0;
+  display: none;
+  text-indent: rem(30);
+  @include mq(md){
+    //padding: rem(20) rem(40) rem(15) rem(80);
+  }
+}
+
+.toggle-list__item-question::before,
+.toggle-list__item-answer::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: calc(rem(24) / 2 * tan(60deg));
+  width: rem(24);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  background-color: $accent-color;
+  transition: .3s;
+  @include mq(md){
+    
+  }
+}
+
+.toggle-list__item-question::before,
+.toggle-list__item-answer::before {
+  transform: rotate(90deg);
+}
+
+.toggle-list__item-question.is-open::before,
+.toggle-list__item-answer.is-open::before {
+  transform: rotate(180deg);
+}
+
+
