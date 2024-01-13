@@ -3,9 +3,9 @@
 .sidebar-header {
   position: relative;
   display: flex;
-  gap: rem(8);
+  gap: rem(12);
   align-items: center;
-  padding-left: rem(16);
+  padding-left: rem(28);
 }
 
 .sidebar-header__icon {
@@ -18,13 +18,14 @@
   width: rem(8);
   height: rem(50);
   background-color: $accent-color;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
 }
 
 .sidebar-header__icon svg {
-  width: rem(50);
-  height: rem(50);
+  width: rem(42);
+  height: rem(42);
 }
 
 .sidebar-header__icon svg path {

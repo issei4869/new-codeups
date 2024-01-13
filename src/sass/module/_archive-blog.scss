@@ -5,18 +5,20 @@
 }
 
 .archive-blog__inner {
-  margin: auto;
-  padding: 0 prem(20);
-  max-width: prem(600);
-  width: 100%;
   @include mq(md){
-    padding: 0 prem(25);
-    max-width: prem(1130);
     display: grid;
     grid-template-columns: 1fr rem(333);
     gap: rem(80);
   }
 }
+
+.archive-blog__inner.inner {
+  padding: 0 rem(21);
+  @include mq('md') {
+    padding: 0 rem(25);
+  }
+}
+
 
 .archive-blog__wrapper {
   //width: 72%;
@@ -37,7 +39,7 @@
 
 /*****サイドバー*****/
 .archive-blog__sidebar {
-  margin-top: rem(80);
+  margin-top: rem(84);
   @include mq(md) {
     margin-top: 0;
     //margin-left: rem(80);

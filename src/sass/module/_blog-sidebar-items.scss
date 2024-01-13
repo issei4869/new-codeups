@@ -4,6 +4,11 @@
 
 }
 
-.blog-sidebar-items__item {
-  margin-top: rem(30);
+.blog-sidebar-items__item + .blog-sidebar-items__item{
+  margin-top: rem(39);
+}
+
+.blog-sidebar-items__btn {
+  margin-top: rem(40);
+  text-align: center;
 }

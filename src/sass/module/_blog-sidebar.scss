@@ -4,6 +4,13 @@
 
 }
 
+.blog-sidebar__inner.inner {
+  padding: 0 rem(19);
+  @include mq('md') {
+    padding: 0 rem(25);
+  }
+}
+
 .blog-sidebar__list {
   
 }
@@ -13,7 +20,7 @@
 }
 
 .blog-sidebar__items {
-  margin-top: rem(30);
+  margin-top: rem(28);
 }
 
 .blog-sidebar__item {
@@ -21,13 +28,13 @@
 }
 
 .blog-sidebar__review {
-  margin-top: rem(80);
+  margin-top: rem(84);
 }
 
 .blog-sidebar__campaign {
-  margin-top: rem(80);
+  margin-top: rem(88);
 }
 
 .blog-sidebar__archive {
-  margin-top: rem(80);
+  margin-top: rem(88);
 }

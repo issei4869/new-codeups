@@ -248,12 +248,13 @@
             <article class="archive-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
-                  <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
+                  <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
                 </div>
                 <div class="blog-card__content blog-card-content">
                   <time datetime="2023-11-17" class="blog-card-content__date">2023.11.17
                   </time>
-                  <p class="blog-card-content__title">ライセンス取得</p>
+                  <p class="blog-card-content__title">ウミガメと泳ぐ
+                  </p>
                   <p class="blog-card-content__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
@@ -262,7 +263,7 @@
             <article class="archive-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
-                  <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
+                  <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
                 </div>
                 <div class="blog-card__content blog-card-content">
                   <time datetime="2023-11-17" class="blog-card-content__date">2023.11.17
@@ -304,12 +305,12 @@
             <article class="archive-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
-                  <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
+                  <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
                 </div>
                 <div class="blog-card__content blog-card-content">
                   <time datetime="2023-11-17" class="blog-card-content__date">2023.11.17
                   </time>
-                  <p class="blog-card-content__title">ライセンス取得</p>
+                  <p class="blog-card-content__title">ウミガメと泳ぐ</p>
                   <p class="blog-card-content__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
@@ -318,7 +319,7 @@
             <article class="archive-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
-                  <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
+                  <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
                 </div>
                 <div class="blog-card__content blog-card-content">
                   <time datetime="2023-11-17" class="blog-card-content__date">2023.11.17
@@ -330,9 +331,27 @@
               </a>
             </article>
           </div>
+          <!-- ページネーションボタン（共通パーツ） -->
+          <div class="layout-campaign-pagenavi pagenavi">
+            <div class="pagenavi__inner">
+              <!-- WP-PageNaviで出力される部分 ここから -->
+              <div class='pagenavi__wp wp-pagenavi' role='navigation'>
+                <a class="previouspostslink" rel="prev" href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <span class='current'>1</span>
+                <a class="page larger" href="#">2</a>
+                <a class="page larger" href="#">3</a>
+                <a class="page larger" href="#">4</a>
+                <a class="page larger u-desktop" href="#">5</a>
+                <a class="page larger u-desktop" href="#">6</a>
+                <a class="nextpostslink" rel="next" href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </div>
+              <!-- WP-PageNaviで出力される部分 ここまで -->
+            </div>
+          </div>
         </div>
-          <!-- サイドバー -->
-          <aside class="archive-blog__sidebar blog-sidebar">
+        <!-- サイドバー -->
+        <aside class="archive-blog__sidebar blog-sidebar">
+          <div class="blog-sidebar__inner inner">
             <ul class="blog-sidebar__list">
               <!-- 人気記事 -->
               <li class="blog-sidebar__item blog-sidebar-item">
@@ -369,7 +388,7 @@
                       </a>
                     </article>
                   </li>
-                  <li class="blog-sidebar-list__card blog-sidebar-card">
+                  <li class="blog-sidebar-cards__card blog-sidebar-card">
                     <article class="blog-sidebar-card__popularity">
                       <a class="blog-sidebar-card__link" href="#">
                         <div class="blog-sidebar-card__wrap">
@@ -385,7 +404,7 @@
                       </a>
                     </article>
                   </li>
-                  <li class="blog-sidebar-list__card blog-sidebar-card">
+                  <li class="blog-sidebar-cards__card blog-sidebar-card">
                     <article class="blog-sidebar-card__popularity">
                       <a class="blog-sidebar-card__link" href="#">
                         <div class="blog-sidebar-card__wrap">
@@ -423,13 +442,13 @@
                   <div class="blog-sidebar-review__img">
                     <img src="./assets/images/common/sidebar1.jpg" alt="30代カップルの画像">
                   </div>
-                  <div class="blog-sidebar-review__content introduction-content">
+                  <div class="blog-sidebar-review__content">
                     <!-- 年齢とカテゴリー -->
-                    <div class="introduction-content__meta">
-                      <div class="introduction-content__age">30代(カップル)</div>
+                    <div class="blog-sidebar-review__meta">
+                      <div class="blog-sidebar-review__age">30代(カップル)</div>
                     </div>
                     <!-- タイトル -->
-                    <div class="introduction-content__title introduction-content__title--sub">ここにタイトルが入ります。ここにタイトル</div>
+                    <div class="blog-sidebar-review__title">ここにタイトルが入ります。ここにタイトル</div>
                   </div>
                 </div>
                 <div class="blog-sidebar-review__btn">
@@ -457,7 +476,7 @@
                 </div>
                 <ul class="blog-sidebar__items blog-sidebar-items">
                   <li class="blog-sidebar-items__item campaign-card">
-                    <div class="campaign-card__img">
+                    <div class="campaign-card__img campaign-card__img--sidebar">
                       <img src="./assets/images/common/campaign1.jpg" alt="多くの種類の魚たちの画像">
                     </div>
                     <div class="campaign-card__content campaign-card__content--sub">
@@ -480,7 +499,7 @@
                     </div>
                   </li>
                   <li class="blog-sidebar-items__item campaign-card">
-                    <div class="campaign-card__img">
+                    <div class="campaign-card__img campaign-card__img--sidebar">
                       <img src="./assets/images/common/campaign2.jpg" alt="孤島の画像">
                     </div>
                     <div class="campaign-card__content campaign-card__content--sub">
@@ -502,6 +521,12 @@
                       </div>
                     </div>
                   </li>
+                  <div class="blog-sidebar-items__btn">
+                    <!-- ボタンの共通パーツ -->
+                    <a href="#" class="btn">
+                      <span>View more</span>
+                    </a>
+                  </div>
                 </ul>
               </li>
               <!-- アーカイブ -->
@@ -521,7 +546,7 @@
                   <div class="sidebar-header__title">アーカイブ</div>
                 </div>
                 <!-- トグルリスト -->
-                <div class="toggle">
+                <div class="layout-toggle toggle">
                   <div class="toggle__inner">
                     <ul class="toggle__list toggle-list">
                       <li class="toggle-list__item">
@@ -543,8 +568,8 @@
                 Something small enough to escape casual notice.
               </details> -->
             </ul>
-          </aside>
-        <!-- </div> -->
+          </div>
+        </aside>
       </div>
     </section>
 

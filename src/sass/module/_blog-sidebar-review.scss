@@ -5,7 +5,7 @@
 }
 
 .blog-sidebar-review__contents {
-  margin-top: rem(30);
+  margin-top: rem(27);
 }
 
 .blog-sidebar-review__img {
@@ -20,6 +20,34 @@
 
 .blog-sidebar-review__content {
   margin-top: rem(16);
+}
+
+.blog-sidebar-review__meta {
+  @include mq('md') {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+.blog-sidebar-review__age {
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+}
+
+.blog-sidebar-review__title {
+  font-weight: $medium;
+  font-size: rem(24);
+  line-height: calc(35 / 24);
+  margin-top: rem(7);
+  width: 100%;
+  @include mq(md){
+    font-size: rem(24);
+    line-height: calc(35 / 24);
+    margin-top: rem(8);
+    max-width: rem(276);
+    width: 100%;
+  }
 }
 
 .blog-sidebar-review__btn {
