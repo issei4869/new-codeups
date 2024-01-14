@@ -7,7 +7,7 @@
 .archive-blog__inner {
   @include mq(md){
     display: grid;
-    grid-template-columns: 1fr rem(333);
+    grid-template-columns: 1fr rem(294);
     gap: rem(80);
   }
 }
@@ -29,11 +29,19 @@
 
 .archive-blog__list {
   border-top: 1px solid rgba($color: #234F5E, $alpha: .2);
+  display: grid;
+  row-gap: rem(40);
   @include mq(md) {
     flex-wrap: wrap;
     border-top: none;
-    //width: calc(706 / 1080);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(40);
+    row-gap: rem(80);
   }
+}
+
+.archive-blog__pagenavi {
+  margin-top: rem(80);
 }
 
 
@@ -41,8 +49,7 @@
 .archive-blog__sidebar {
   margin-top: rem(84);
   @include mq(md) {
-    margin-top: 0;
-    //margin-left: rem(80);
+    margin-top: rem(4);
   }
 }
 

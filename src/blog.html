@@ -187,9 +187,9 @@
     <section class="layout-archive-blog archive-blog">
 		  <div class="archive-blog__inner inner">
         <div class="archive-blog__wrapper">
-          <div class="archive-blog__list archive-list">
+          <div class="archive-blog__list">
             <!-- ループ -->
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog1.jpg" alt="イソギンチャクの画像">
@@ -203,7 +203,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog2.jpg" alt="ウミガメの画像">
@@ -217,7 +217,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
@@ -231,7 +231,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/sub-gallery4.jpg" alt="黄色の魚の画像">
@@ -245,7 +245,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
@@ -259,7 +259,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
@@ -273,7 +273,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
@@ -287,7 +287,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/sub-gallery4.jpg" alt="黄色の魚の画像">
@@ -301,7 +301,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
@@ -315,7 +315,7 @@
                 </div>
               </a>
             </article>
-            <article class="archive-list__item blog-card">
+            <article class="archive-blog__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
@@ -331,10 +331,10 @@
             </article>
           </div>
           <!-- ページネーションボタン（共通パーツ） -->
-          <div class="layout-campaign-pagenavi pagenavi">
+          <div class="archive-blog__pagenavi pagenavi">
             <div class="pagenavi__inner">
               <!-- WP-PageNaviで出力される部分 ここから -->
-              <div class='pagenavi__wp wp-pagenavi' role='navigation'>
+              <div class='wp-pagenavi' role='navigation'>
                 <a class="previouspostslink" rel="prev" href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 <span class='current'>1</span>
                 <a class="page larger" href="#">2</a>
@@ -458,7 +458,7 @@
                 </div>
               </li>
               <!-- キャンペーン -->
-              <li class="blog-sidebar__campaign">
+              <li class="blog-sidebar__campaign blog-sidebar-campaign">
                 <!-- サイドバータイトル -->
                 <div class="blog-sidebar__title sidebar-header">
                   <span class="sidebar-header__icon">
@@ -473,17 +473,17 @@
                   </span>
                   <div class="sidebar-header__title">キャンペーン</div>
                 </div>
-                <ul class="blog-sidebar__items blog-sidebar-items">
+                <ul class="blog-sidebar-campaign__items blog-sidebar-items">
                   <li class="blog-sidebar-items__item campaign-card">
                     <div class="campaign-card__img campaign-card__img--sidebar">
                       <img src="./assets/images/common/campaign1.jpg" alt="多くの種類の魚たちの画像">
                     </div>
-                    <div class="campaign-card__content campaign-card__content--sub">
+                    <div class="campaign-card__content campaign-card__content--sidebar">
                       <!-- タイトル -->
                       <div class="campaign-card__title campaign-card__title--sidebar">ライセンス取得</div>
                       <!-- サブタイトル -->
                       <div class="campaign-card__wrapper campaign-card__wrapper--sub">
-                        <div class="campaign-card__subtitle">
+                        <div class="campaign-card__subtitle campaign-card__subtitle--sidebar">
                           全部コミコミ(お一人様)
                         </div>
                         <div class="campaign-card__price">
@@ -545,7 +545,7 @@
                   <div class="sidebar-header__title">アーカイブ</div>
                 </div>
                 <!-- トグルリスト -->
-                <div class="layout-toggle toggle">
+                <div class="blog-sidebar__toggle toggle">
                   <div class="toggle__inner">
                     <ul class="toggle__list toggle-list">
                       <li class="toggle-list__item">

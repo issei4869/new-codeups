@@ -20,7 +20,7 @@
 
 .toggle-list__item-question {
   position: relative;
-  // text-indent: rem(-20);
+  text-indent: rem(-3);
   cursor: pointer;
   @include mq(md){
   }
@@ -29,9 +29,9 @@
 .toggle-list__item-answer {
   position: relative;
   margin-left: rem(24);
-  padding: rem(4) 0;
+  padding: rem(3) 0;
   display: none;
-  text-indent: rem(30);
+  text-indent: rem(34);
   @include mq(md){
     //padding: rem(20) rem(40) rem(15) rem(80);
   }
@@ -41,10 +41,10 @@
 .toggle-list__item-answer::before {
   content: "";
   position: absolute;
-  top: 25%;
-  left: 0;
-  height: calc(rem(24) / 2 * tan(60deg));
-  width: rem(24);
+  top: 30%;
+  left: rem(3);
+  height: calc(rem(21) / 2 * tan(60deg));
+  width: rem(21);
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   background-color: $accent-color;
   transition: .3s;
