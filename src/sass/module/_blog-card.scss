@@ -23,7 +23,7 @@
   opacity: 0.7;
 }
 
-.blog-card__content {
+.blog-card__meta {
   padding: calc(rem(8) - rem(3)) rem(16) rem(24) rem(16);
   @include mq(md){
       

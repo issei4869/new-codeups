@@ -1,0 +1,162 @@
+@use 'global' as *;
+
+.single-blog {
+  position: relative;
+}
+
+.single-blog::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/goldfish2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: rem(-24);
+  left: rem(15);
+  min-width: rem(120);
+  min-height: rem(55);
+  @include mq('md') {
+    top: rem(-70);
+    left: calc(50% - min(48%, rem(619)));
+    min-width: rem(301);
+    min-height: rem(138);
+  }
+}
+
+.single-blog__inner {
+  @include mq(md){
+    display: grid;
+    grid-template-columns: 1fr rem(294);
+    gap: rem(80);
+  }
+}
+
+.single-blog__inner.inner {
+  // padding: 0 rem(21);
+  // @include mq('md') {
+  //   padding: 0 rem(25);
+  // }
+}
+
+
+.single-blog__wrapper {
+  
+  @include mq(md){
+    max-width: rem(700);
+    width: 100%;
+  }
+}
+
+.single-blog__list {
+  
+  @include mq(md) {
+    // flex-wrap: wrap;
+    // border-top: none;
+  }
+}
+
+.single-blog__meta {
+  
+  @include mq(md){
+      
+  }
+}
+
+.single-blog__date {
+  font-family: $english-font-family;
+  font-size: rem(14);
+  line-height: calc(18 / 14);
+    @include mq(md){
+      
+    }
+}
+
+.single-blog__title {
+  font-size: rem(24);
+  line-height: calc(35 / 24);
+  margin-top: rem(8);
+  font-weight: $medium;
+  border-bottom: rem(1) solid $accent-color;
+  padding-bottom: calc(rem(4) - rem(1));
+  @include mq(md){
+    font-size: rem(32);
+    line-height: calc(46 / 32);
+    margin-top: rem(7);
+    padding-bottom: 0;
+  }
+}
+
+.single-blog__img,
+.single-blog__content div {
+  width: 100%;
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.single-blog__img img,
+.single-blog__content div img {
+  width: 100%;
+  aspect-ratio: 700/468;
+  object-fit: cover;
+  transition: all .3s;
+}
+
+.single-blog__content p {
+  margin-top: rem(24);
+  line-height: calc(24 / 16);
+  @include mq('md') {
+    margin-top: rem(39);
+  }
+}
+
+.single-blog__content ul {
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.single-blog__content ul li {
+  line-height: calc(24 / 16);
+  position: relative;
+  text-indent: rem(27);
+}
+
+.single-blog__content ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: rem(18);
+  height: rem(18);
+  background-image: url(../images/common/starfish2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.single-blog__content ul li:not(:first-child) {
+  margin-top: rem(4);
+}
+
+
+.single-blog__pagenavi {
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(82);
+  }
+}
+
+
+/*****サイドバー*****/
+.single-blog__sidebar {
+  margin-top: rem(84);
+  @include mq(md) {
+    margin-top: rem(4);
+  }
+}
+

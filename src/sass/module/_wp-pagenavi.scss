@@ -19,6 +19,9 @@
   border: 1px solid $accent-color;
   background-color: $base-color;
   transition: .3s;
+}
+
+.wp-pagenavi a {
   margin-left: rem(11);
 }
 
@@ -26,6 +29,7 @@
   padding-left: rem(12);
   padding-right: rem(12);
   margin-left: 0;
+  margin-right: rem(40);
 }
 
 .wp-pagenavi a:last-child {
@@ -33,6 +37,8 @@
   padding-right: rem(12);
   margin-left: rem(40);
 }
+
+
 
 .wp-pagenavi a.u-desktop {
   display: none;
@@ -52,7 +58,6 @@
 	color: $base-color;
 	background-color: $accent-color;
 	border-color: $accent-color;
-  margin-left: rem(40);
 }
 
 .previouspostslink {
@@ -68,6 +73,12 @@
   border-left: rem(1) solid $accent-color;
   width: rem(13);
   height: rem(13);
+}
+
+.previouspostslink:hover::after,
+.nextpostslink:hover::after {
+  border-bottom: rem(1) solid $base-color;
+  border-left: rem(1) solid $base-color;
 }
 
 .previouspostslink::after {

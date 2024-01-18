@@ -11,6 +11,13 @@
   }
 }
 
+.blog-sidebar__inner--single.inner {
+  padding: 0 rem(25);
+  @include mq('md') {
+    padding: 0;
+  }
+}
+
 .blog-sidebar__list {
   
 }
