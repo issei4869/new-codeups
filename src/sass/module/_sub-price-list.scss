@@ -1,0 +1,38 @@
+@use 'global' as *;
+
+.sub-price-list {
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.sub-price-list__head {
+    padding: rem(15) 0;
+    width: 33.333%;
+    font-size: rem(16);
+    color: $base-color;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    @include mq(md){
+        padding: rem(20) 0;
+        font-size: rem(24);
+    }
+}
+
+.sub-price-list__head.u-desktop {
+  @include mq('md') {
+    display: table-cell;
+  }
+}
+
+.sub-price-list__data {
+    padding: rem(10) 0;
+    font-size: rem(12);
+    width: 33.333%;
+    border: 1px solid $accent-color;
+    @include mq(md){
+        padding: rem(15) 0;
+        font-size: rem(18);
+    }
+}

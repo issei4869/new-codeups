@@ -155,12 +155,12 @@
     <section class="mv">
       <div class="mv__inner">
         <div class="mv__title-wrap sub-mv__title-wrap">
-          <h2 class="mv__main-title sub-mv__main-title">Price</h2>
+          <h2 class="mv__main-title sub-mv__main-title">Voice</h2>
         </div>
         <div class="mv__swiper">
           <picture class="mv__swiper-img">
-            <source media="(min-width: 376px)" srcset="./assets/images/common/sub-price-mv1_pc.jpg">
-            <img src="./assets/images/common/sub-price-mv1_sp.jpg" alt="ダイバーの画像">
+            <source media="(min-width: 376px)" srcset="./assets/images/common/sub-voice-mv1_pc.jpg">
+            <img src="./assets/images/common/sub-voice-mv1_sp.jpg" alt="ダイバーの画像">
           </picture>
         </div>
       </div>
@@ -177,35 +177,181 @@
         </span>
         &nbsp;&gt;&nbsp;
         <span>
-          <span class="current-item">料金一覧</span>
+          <span class="current-item">お客様の声</span>
         </span>
         <!-- Breadcrumb NavXTで出力される部分 ここまで -->
       </div>
     </div>
 
-    <!-- Priceセクション -->
+    <!-- Voiceセクション -->
     <section class="layout-sub-voice sub-voice">
       <div class="sub-voice__inner inner">
-        <table class="sub-price-list">
-          <tbody>
-            <tr class="sub-price-list__head">
-              <th colspan="3" class="sub-price-list__head u-mobile">ライセンス講習</th>
-              <th rowspan="4" class="sub-price-list__head u-desktop">ライセンス講習</th>
-            </tr>
-            <tr>
-              <td class="sub-price-list__data">オープンウォーターダイバーコース</td>
-              <td class="sub-price-list__data">¥50,000</td>
-            </tr>
-            <tr>
-              <td class="sub-price-list__data">アドバンスドオープンウォーターコース</td>
-              <td class="sub-price-list__data">¥60,000</td>
-            </tr>
-            <tr>
-              <td class="sub-price-list__data">レスキュー＋EFRコース</td>
-              <td class="sub-price-list__data">¥70,000</td>
-            </tr>
-          </tbody>
-        </table>
+        <!-- Tabの共通パーツ -->
+        <div class="sub-voice__tab category-tab">
+          <ul class="category-tab__items category-tab-items">
+            <li class="category-tab-items__item category-tab-item is-active" data-number="tab01">ALL</li>
+            <li class="category-tab-items__item category-tab-item" data-number="tab02">ライセンス講習</li>
+            <li class="category-tab-items__item category-tab-item" data-number="tab03">ファンダイビング</li>
+            <li class="category-tab-items__item category-tab-item" data-number="tab04">体験ダイビング</li>
+          </ul>
+        </div>
+        <ul class="sub-voice__items sub-voice-items">
+          <li class="sub-voice-items__item voice-card">
+            <!-- 上のコンテンツ -->
+            <div class="voice-card__contents">
+              <!--左側のコンテンツ -->
+              <div class="voice-card__content">
+                <!-- 年齢とカテゴリー -->
+                <div class="voice-card__meta">
+                  <div class="voice-card__age">20代(女性)</div>
+                  <p class="voice-card__category">ライセンス講習</p>
+                </div>
+                <!-- タイトル -->
+                <div class="voice-card__title">ここにタイトルが入ります。ここにタイトル</div>
+              </div>
+              <!-- 右側の画像 -->
+              <div class="voice-card__img colorbox js-color">
+                <img src="./assets/images/common/voice1.jpg" alt="20代(女性)の画像">
+              </div>
+            </div>
+            <!-- 下のテキスト -->
+            <div class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。</div>
+          </li>
+          <li class="sub-voice-items__item voice-card">
+            <!-- 上のコンテンツ -->
+            <div class="voice-card__contents">
+              <!--左側のコンテンツ -->
+              <div class="voice-card__content">
+                <!-- 年齢とカテゴリー -->
+                <div class="voice-card__meta">
+                  <div class="voice-card__age">30代(男性)</div>
+                  <p class="voice-card__category">ファンダイビング</p>
+                </div>
+                <!-- タイトル -->
+                <div class="voice-card__title">ここにタイトルが入ります。ここにタイトル</div>
+              </div>
+              <!-- 右側の画像 -->
+              <div class="voice-card__img colorbox js-color">
+                <img src="./assets/images/common/voice2.jpg" alt="30代(男性)の画像">
+              </div>
+            </div>
+            <!-- 下のテキスト -->
+            <div class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。</div>
+          </li>
+          <li class="sub-voice-items__item voice-card">
+            <!-- 上のコンテンツ -->
+            <div class="voice-card__contents">
+              <!--左側のコンテンツ -->
+              <div class="voice-card__content">
+                <!-- 年齢とカテゴリー -->
+                <div class="voice-card__meta">
+                  <div class="voice-card__age">30代(女性)</div>
+                  <p class="voice-card__category">体験ダイビング</p>
+                </div>
+                <!-- タイトル -->
+                <div class="voice-card__title">ここにタイトルが入ります。ここにタイトル</div>
+              </div>
+              <!-- 右側の画像 -->
+              <div class="voice-card__img colorbox js-color">
+                <img src="./assets/images/common/sub-voice1.jpg" alt="30代女性2人の画像">
+              </div>
+            </div>
+            <!-- 下のテキスト -->
+            <div class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。</div>
+          </li>
+          <li class="sub-voice-items__item voice-card">
+            <!-- 上のコンテンツ -->
+            <div class="voice-card__contents">
+              <!--左側のコンテンツ -->
+              <div class="voice-card__content">
+                <!-- 年齢とカテゴリー -->
+                <div class="voice-card__meta">
+                  <div class="voice-card__age">20代(女性)</div>
+                  <p class="voice-card__category">体験ダイビング</p>
+                </div>
+                <!-- タイトル -->
+                <div class="voice-card__title">ここにタイトルが入ります。ここにタイトル</div>
+              </div>
+              <!-- 右側の画像 -->
+              <div class="voice-card__img colorbox js-color">
+                <img src="./assets/images/common/sub-voice2.jpg" alt="20代女性（voiceページのみ）の画像">
+              </div>
+            </div>
+            <!-- 下のテキスト -->
+            <div class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。</div>
+          </li>
+          <li class="sub-voice-items__item voice-card">
+            <!-- 上のコンテンツ -->
+            <div class="voice-card__contents">
+              <!--左側のコンテンツ -->
+              <div class="voice-card__content">
+                <!-- 年齢とカテゴリー -->
+                <div class="voice-card__meta">
+                  <div class="voice-card__age">30代(カップル)</div>
+                  <p class="voice-card__category">ファンダイビング</p>
+                </div>
+                <!-- タイトル -->
+                <div class="voice-card__title">ここにタイトルが入ります。ここにタイトル</div>
+              </div>
+              <!-- 右側の画像 -->
+              <div class="voice-card__img colorbox js-color">
+                <img src="./assets/images/common/sidebar1.jpg" alt="30代カップルの画像">
+              </div>
+            </div>
+            <!-- 下のテキスト -->
+            <div class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。</div>
+          </li>
+          <li class="sub-voice-items__item voice-card">
+            <!-- 上のコンテンツ -->
+            <div class="voice-card__contents">
+              <!--左側のコンテンツ -->
+              <div class="voice-card__content">
+                <!-- 年齢とカテゴリー -->
+                <div class="voice-card__meta">
+                  <div class="voice-card__age">20代(女性)</div>
+                  <p class="voice-card__category">ライセンス講習</p>
+                </div>
+                <!-- タイトル -->
+                <div class="voice-card__title">ここにタイトルが入ります。ここにタイトル</div>
+              </div>
+              <!-- 右側の画像 -->
+              <div class="voice-card__img colorbox js-color">
+                <img src="./assets/images/common/sub-voice3.jpg" alt="20代女性（Voiceページのみ）の画像">
+              </div>
+            </div>
+            <!-- 下のテキスト -->
+            <div class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            <br>ここにテキストが入ります。ここにテキストが入ります。</div>
+          </li>
+        </ul>
+      </div>
+      <!-- ページネーションボタン（共通パーツ） -->
+      <div class="sub-voice__pagenavi pagenavi">
+        <div class="pagenavi__inner">
+          <!-- WP-PageNaviで出力される部分 ここから -->
+          <div class='pagenavi__wp wp-pagenavi' role='navigation'>
+            <a class="previouspostslink" rel="prev" href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <span class='current'>1</span>
+            <a class="page larger" href="#">2</a>
+            <a class="page larger" href="#">3</a>
+            <a class="page larger" href="#">4</a>
+            <a class="page larger u-desktop" href="#">5</a>
+            <a class="page larger u-desktop" href="#">6</a>
+            <a class="nextpostslink" rel="next" href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </div>
+          <!-- WP-PageNaviで出力される部分 ここまで -->
+        </div>
       </div>
     </section>
 
