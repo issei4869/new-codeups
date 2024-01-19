@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.sub-voice-items {
+  display: grid;
+  justify-content: center;
+  row-gap: rem(40);
+  @include mq('md') {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(80);
+    column-gap: rem(40);
+  }
+}
+
+.sub-voice-items__item {
+  width: 100%;
+  @include mq('md') {
+    max-width: none;
+  }
+}
