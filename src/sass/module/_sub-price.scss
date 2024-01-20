@@ -1,0 +1,38 @@
+@use 'global' as *;
+
+.sub-price {
+  position: relative;
+}
+
+.sub-price::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/goldfish2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: rem(-24);
+  left: rem(15);
+  min-width: rem(120);
+  min-height: rem(55);
+  @include mq('md') {
+    top: rem(-70);
+    left: calc(50% - min(48%, rem(619)));
+    min-width: rem(301);
+    min-height: rem(138);
+  }
+}
+
+.sub-price__inner.inner {
+  @include mq('md') {
+    max-width: rem(752);
+  }
+  //text-align: center;
+}
+
+.sub-price__list + .sub-price__list {
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}

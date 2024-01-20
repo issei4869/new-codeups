@@ -1,23 +1,23 @@
 @use 'global' as *;
 
 .faq-list__item {
-  background-color: #fff;
-  box-shadow: 0 0 rem(40) 0 rgba(0, 0, 0, .05);
+  
 }
 
 .faq-list__item + .faq-list__item {
-  margin-top: rem(20);
+  margin-top: rem(40);
 }
 
 .faq-list__item-question {
-  padding: rem(12) rem(40) rem(12) rem(60);
+  padding: rem(16);
+  line-height: calc(23 / 16);
   position: relative;
-  font-size: rem(15);
-  text-indent: rem(-20);
+  background-color: $accent-color;
+  color: $base-color;
   cursor: pointer;
   @include mq(md){
-      padding: rem(14) rem(60) rem(14) rem(80);
-      font-size: rem(18);
+    padding: rem(26) rem(40);
+    font-size: rem(20);
   }
 }
 
@@ -25,15 +25,16 @@
 .faq-list__item-question::after {
   content: "";
   position: absolute;
-  top: rem(21);
-  right: rem(20);
-  width: rem(18);
-  height: rem(3);
-  background: #DE8430;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(16);
+  width: rem(28);
+  height: rem(1);
+  background-color: $base-color;
   transition: .3s;
   @include mq(md){
-    top: rem(24);
-    width: rem(20);
+    width: rem(32);
+    right: rem(40);
   }
 }
 
@@ -45,25 +46,13 @@
   transform: rotate(0deg);
 }
 
-.faq-list__item-question span {
-  margin-right: rem(20);
-  display: inline-block;
-  color: #F6D970;
-}
-
 .faq-list__item-answer {
-  padding: rem(15) rem(30) rem(15) rem(60);
+  line-height: calc(23 / 16);
+  padding: rem(24) rem(16) rem(22);
+  border: rem(1) solid $accent-color;
   display: none;
-  font-size: rem(15);
-  text-indent: rem(-20);
   @include mq(md){
-    padding: rem(20) rem(40) rem(15) rem(80);
-    font-size: rem(18);
+    padding: rem(39) rem(40) rem(39) rem(39);
+    margin-top: rem(15);
   }
-}
-
-.faq-list__item-answer span {
-  margin-right: rem(20);
-  display: inline-block;
-  color: #DE8430;
 }

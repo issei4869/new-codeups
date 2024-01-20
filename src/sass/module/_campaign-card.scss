@@ -36,7 +36,7 @@
   flex-grow: 1;
   @include mq('md') {
     padding-top: rem(24);
-    padding-bottom: rem(44);
+    padding-bottom: rem(39);
   }
 }
 
@@ -78,14 +78,17 @@
   //display: flex;
   flex-grow: 1;
   position: relative;
+  // @include mq(md){
+  //   font-size: rem(24);
+  //   line-height: calc(35 / 24);
+  // }
+}
+
+.campaign-card__title--sub {
   @include mq(md){
     font-size: rem(24);
     line-height: calc(35 / 24);
   }
-}
-
-.campaign-card__title--sub {
-  
 }
 
 .campaign-card__title--sidebar {

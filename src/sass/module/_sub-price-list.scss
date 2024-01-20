@@ -1,23 +1,44 @@
 @use 'global' as *;
 
 .sub-price-list {
-    width: 100%;
-    line-height: 1;
-    text-align: center;
-    border-collapse: collapse;
+  width: 100%;
+  line-height: 1;
+  border-collapse: collapse;
 }
 
 .sub-price-list__head {
-    padding: rem(15) 0;
-    width: 33.333%;
-    font-size: rem(16);
-    color: $base-color;
-    background-color: $accent-color;
-    border: 1px solid $accent-color;
-    @include mq(md){
-        padding: rem(20) 0;
-        font-size: rem(24);
-    }
+  padding: rem(6) 0;
+  width: 100%;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+  @include mq(md){
+    width: calc((200 / 702) * 100%);
+    padding: rem(18) 0;
+  }
+}
+
+.sub-price-list__wrapper {
+  display: flex;
+  gap: rem(8);
+  align-items: center;
+  justify-content: center;
+  @include mq('md') {
+    flex-direction: column-reverse;
+  }
+}
+
+.sub-price-list__wrapper span {
+  color: $base-color;
+  font-weight: $bold;
+}
+
+.sub-price-list__wrapper span svg {
+  width: rem(24);
+  height: rem(24);
+  @include mq('md') {
+    width: rem(64);
+    height: rem(64);
+  }
 }
 
 .sub-price-list__head.u-desktop {
@@ -26,13 +47,31 @@
   }
 }
 
-.sub-price-list__data {
-    padding: rem(10) 0;
-    font-size: rem(12);
-    width: 33.333%;
-    border: 1px solid $accent-color;
-    @include mq(md){
-        padding: rem(15) 0;
-        font-size: rem(18);
-    }
+.sub-price-list__text,
+.sub-price-list__yen {
+  padding: rem(6) rem(16) rem(6);
+  height: rem(60);
+  line-height: calc(24 / 16);
+  border: 1px solid $accent-color;
+  @include mq(md){
+    padding-top: rem(17);
+    padding-bottom: rem(17);
+  }
+}
+
+.sub-price-list__text {
+  width: calc((240 / 345) * 100%);
+  text-align: center;
+  @include mq('md') {
+    width: calc((340 / 702) * 100%);
+    text-align: left;
+  }
+}
+
+.sub-price-list__yen {
+  width: calc((105 / 345) * 100%);
+  text-align: right;
+  @include mq('md') {
+    width: calc((162 / 702) * 100%);
+  }
 }
