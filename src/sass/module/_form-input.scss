@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .form-input input {
-	padding: rem(8) rem(15) rem(6);
+	padding: rem(6) rem(15) rem(8);
 	width: 100%;
 	line-height: 1;
 	border-radius: 0;
@@ -16,7 +16,7 @@
 }
 
 .form-input input:focus {
-	border: 1px solid #ccc;
+	border: 1px solid $accent-color;
 	box-shadow: none;
 	outline: none;
 }

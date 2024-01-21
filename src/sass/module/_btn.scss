@@ -10,6 +10,11 @@
   z-index: 1;
 }
 
+.btn--sub-contact {
+  padding-left: rem(52);
+  padding-right: rem(112);
+}
+
 .btn:hover {
   opacity: 1;
   @include mq(md){

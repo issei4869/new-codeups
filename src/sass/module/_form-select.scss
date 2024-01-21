@@ -1,26 +1,30 @@
 @use 'global' as *;
 
 .form-select select {
-    padding: rem(11.5) rem(50) rem(11.5) rem(15);
-    width: 100%;
-    font-size: rem(15);
-    line-height: 1;
-    border-radius: 0;
-    border: 1px solid #ccc;
-    background-image: url(./../images/common/arrow.svg);
-    background-repeat: no-repeat;
-    background-size: rem(15);
-    background-position: right rem(15) top rem(15);
-    appearance: none;
-    cursor: pointer;
+  padding: rem(11) rem(50) rem(12) rem(8);
+  width: 100%;
+  font-size: rem(12);
+  line-height: calc(17 / 12);
+  border-radius: 0;
+  color: #000;
+  border: 1px solid $accent-color;
+  background-image: url(./../images/common/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: rem(12);
+  background-position: right rem(7) top 50%;
+  appearance: none;
+  cursor: pointer;
+  @include mq('md') {
+    padding: rem(7) rem(50) rem(6) rem(8);
+  }
 }
 
 .form-select select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 .form-select select:focus {
-    border: 1px solid #ccc;
-    box-shadow: none;
-    outline: none;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
 }

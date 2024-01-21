@@ -1,12 +1,10 @@
 @use 'global' as *;
 
 .sub-contact__inner {
-  // margin: auto;
-  // padding: 0 rem(20);
-  // max-width: rem(600);
-  // width: 100%;
-  // @include mq(md){
-  //     padding: 0 rem(25);
-  //     max-width: rem(1200);
-  // }
+  
+}
+
+.sub-contact__inner.inner {
+  max-width: rem(750);
+  width: 100%;
 }
