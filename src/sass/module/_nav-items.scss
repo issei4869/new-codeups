@@ -22,6 +22,10 @@
   line-height: calc(18 / 16);
 }
 
+.nav-items__item--sitemap a {
+  color: $font-color;
+}
+
 .nav-items__item:nth-child(n + 2) a {
   margin-top: rem(24);
 }
@@ -50,11 +54,13 @@
   background-size: contain;
 }
 
+.nav-items__item--sitemap a span::before {
+  background-image: url(../images/common/starfish3.png);
+}
+
 .nav-items__item:nth-child(n + 2) a span  {
   margin-top: rem(16);
 }
-
-
 
 
 

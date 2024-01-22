@@ -1,0 +1,60 @@
+@use 'global' as *;
+
+.sitemap {
+  position: relative;
+}
+
+.sitemap::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/goldfish2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: rem(-24);
+  left: rem(15);
+  min-width: rem(120);
+  min-height: rem(55);
+  z-index: 999;
+  @include mq('md') {
+    display: none;
+  }
+}
+
+
+.sitemap__content {
+  margin-top: rem(40);
+  display: flex;
+  // justify-content: space-between;
+  //gap: rem(25);
+  padding-left: rem(23);
+  @include mq(md){
+    margin-top: rem(24);
+    // display: block;
+    gap: rem(87);
+    padding-left: rem(22);
+    // max-width: rem(550);
+    // width: 100%;
+  }
+}
+
+.sitemap__wrap {
+  width: 50%;
+  @include mq('md') {
+    display: flex;
+    gap: rem(166);
+  }
+}
+
+.sitemap__wrap:first-child {
+  width: 50%;
+}
+
+.sitemap__wrap + .sitemap__wrap {
+  padding-left: rem(33);
+  flex-grow: 1;
+  width: 50%;
+  @include mq('md') {
+    justify-content: right;
+  }
+}

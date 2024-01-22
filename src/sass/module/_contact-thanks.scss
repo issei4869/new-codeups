@@ -1,10 +1,10 @@
 @use 'global' as *;
 
-.sub-contact {
+.contact-thanks {
   position: relative;
 }
 
-.sub-contact::before {
+.contact-thanks::before {
   content: "";
   position: absolute;
   background-image: url(../images/common/goldfish2.png);
@@ -24,11 +24,16 @@
   }
 }
 
-.sub-contact__inner {
-  
+.contact-thanks__text,
+.contact-thanks__subtext {
+  text-align: center;
 }
 
-.sub-contact__inner.inner {
-  max-width: rem(750);
-  width: 100%;
+.contact-thanks__text {
+  line-height: calc(18 / 16);
+}
+
+.contact-thanks__subtext {
+  line-height: calc(23 / 16);
+  margin-top: rem(40);
 }

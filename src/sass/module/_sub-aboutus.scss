@@ -17,6 +17,12 @@
   min-height: rem(55);
   z-index: 999;
   @include mq('md') {
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/goldfish2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     top: rem(-151);
     left: calc(50% - min(48%, rem(619)));
     min-width: rem(301);
