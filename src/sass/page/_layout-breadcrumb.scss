@@ -6,3 +6,14 @@
     margin-top: rem(8);
   }
 }
+
+.layout-breadcrumb--404 {
+  margin-top: 0;
+  // padding-top: rem(88);
+  padding-top: rem(0);
+  @include mq('md') {
+    margin-top: 0;
+    // padding-top: rem(90);
+    padding-top: rem(0);
+  }
+}

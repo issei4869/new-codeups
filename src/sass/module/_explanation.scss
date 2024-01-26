@@ -1,0 +1,71 @@
+@use 'global' as *;
+
+.explanation {
+  
+}
+
+.explanation__title {
+  font-size: rem(24);
+  font-weight: $bold;
+  line-height: calc(35 / 24);
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: calc(46 / 32);
+  }
+}
+
+.explanation__contents {
+  margin-top: rem(40);
+  line-height: calc(32 / 16);
+}
+
+.explanation__contents ol {
+  counter-reset: listnum; /* カウンターをリセット */
+}
+
+.explanation__contents ul {
+  
+}
+
+.explanation__contents ol li,
+.explanation__contents ul li {
+  // list-style-position: inside;
+}
+
+.explanation__contents ol li {
+  // list-style-type: decimal;
+  // position: relative;
+  text-indent: -1.2em;
+  padding-left: 1.5em;
+}
+
+.explanation__contents ol li::before {
+  counter-increment: listnum;
+	content: counter(listnum) "."; /* 半角スペースを入れて""の中にピリオドを追加 */
+	padding-right: rem(6);
+}
+
+.explanation__space {
+  margin-top: rem(32);
+}
+
+.explanation__contents ul li {
+  // list-style-type: disc;
+}
+
+.explanation__contents ul li::before {
+  content: "・";
+	// padding-right: rem(6);
+}
+
+.explanation__contents ul li::marker {
+  // font-size: rem(9);
+}
+
+.explanation__contents ul li span {
+  // vertical-align: middle;
+}
+
+.explanation__contents p:not(:first-child) {
+  margin-top: rem(32);
+}

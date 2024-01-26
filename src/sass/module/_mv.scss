@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.sub-mv__title-wrap {
+.mv__title-wrap--sub {
   @include mq('md') {
     top: 61%;
     transform: translate(-50%,-61%);
@@ -43,7 +43,7 @@
   }
 }
 
-.sub-mv__main-title {
+.mv__main-title--sub {
   letter-spacing: initial;
   text-indent: initial;
 }

@@ -1,5 +1,14 @@
 @use 'global' as *;
 
+.breadcrumb--404 {
+  text-align: left;
+  padding-top: rem(88);
+  background-color: $accent-color;
+  @include mq('md') {
+    padding-top: rem(98);
+  }
+}
+
 .breadcrumb__inner {
   margin: auto;
   padding: 0 rem(20);
@@ -16,6 +25,18 @@
   line-height: calc(20 / 14);
 }
 
-.breadcrumb .current-item {
-  //color: #DE8430;
+.breadcrumb a {
+  cursor: pointer;
+}
+
+.breadcrumb a:hover {
+  opacity: 0.7;
+}
+
+.breadcrumb--404 span {
+  color: $base-color;
+}
+
+.breadcrumb span:not(:first-child) {
+  margin-left: rem(3);
 }

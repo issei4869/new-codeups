@@ -8,6 +8,13 @@
   }
 }
 
+.footer--404 {
+  padding-top: rem(52);
+  @include mq('md') {
+    padding-top: rem(80);
+  }
+}
+
 .footer__inner {
   margin: 0 auto;
   max-width: rem(530);
