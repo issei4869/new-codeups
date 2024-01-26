@@ -24,9 +24,6 @@
 
 .btn:hover {
   opacity: 1;
-  @include mq(md){
-    opacity: 1;
-  }
 }
 
 .btn::before {

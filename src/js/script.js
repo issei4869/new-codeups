@@ -70,10 +70,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     fadeEffect: {
       crossFade: true,
     },
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
   });
 
   // Campaignリサイズ処理（PC時のみ矢印表示）
@@ -96,10 +96,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       speed: 2000,
       slidesPerView: 1.27,
       spaceBetween: 24,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // },
       breakpoints: {
         768: {
           slidesPerView: 3.485,
@@ -139,8 +139,58 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
   });
 
+  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
+  $(function() {
+    let pageHash = window.location.hash;
+    if (pageHash) {
+        let scrollToElement = $('[data-id="' + pageHash + '"]');
+        if (!scrollToElement.length) return;
+        $(window).on('load', function() {
+            history.replaceState('', '', './');
+            let locationOffset = scrollToElement.offset().top;
+            let navigationBarHeight = $('.header').innerHeight();
+            locationOffset = locationOffset - navigationBarHeight;
+            $('html, body').animate({
+                scrollTop: locationOffset
+            }, 300, 'swing');
+        });
+    }
+  });
+
+  $(function() {
+      $('a[href*="#"]').on('click', function() {
+          const scrollSpeed = 400;
+          const navigationHeight = $(".header").innerHeight();
+          const scrollToTarget = $(this.hash === '#' || '' ? 'html' : this.hash)
+          if (!scrollToTarget.length) return;
+          const scrollPosition = scrollToTarget.offset().top - navigationHeight;
+          $('html, body').animate({
+              scrollTop: scrollPosition
+          }, scrollSpeed, 'swing');
+          return false;
+      });
+  });
+
+  // $(document).on('click', 'a[href*="#"]', function () {
+  //   let time = 400;
+  //   let header = $('header').innerHeight();
+  //   let target = $(this.hash);
+  //   if (!target.length) return;
+  //   let targetY = target.offset().top - header;
+  //   $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+  //   return false;
+  // });
+
   /*****Tab切り替え*****/
   $('.js-tab-menu').on('click', function () {
+    $('.js-tab-menu').removeClass('is-active');
+    $('.js-tab-content').removeClass('is-active');
+    $(this).addClass('is-active');
+    var number = $(this).data("number");
+    $('#' + number).addClass('is-active');
+  });
+
+  $('.js-footer-menu').on('click', function () {
     $('.js-tab-menu').removeClass('is-active');
     $('.js-tab-content').removeClass('is-active');
     $(this).addClass('is-active');
