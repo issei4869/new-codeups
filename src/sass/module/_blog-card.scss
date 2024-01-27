@@ -34,9 +34,9 @@
   font-family: $english-font-family;
   font-size: rem(12);
   line-height: calc(18 / 12);
-    @include mq(md){
-      
-    }
+  @include mq(md){
+    
+  }
 }
 
 .blog-card__title,
@@ -51,11 +51,6 @@
   @include mq(md){
     
   }
-}
-
-.blog-card__title--sub {
-  border-bottom: 0;
-  padding-bottom: 0;
 }
 
 .blog-card__text {

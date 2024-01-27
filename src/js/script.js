@@ -200,14 +200,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   
   /*****トグルリスト*****/
   $('.js-toggle-question').on('click', function () {
-      $(this).nextAll().slideToggle();
-      $(this).toggleClass('is-open');
+    $(this).nextAll().slideToggle();
+    $(this).toggleClass('is-open');
   });
 
   /*****アコーディオン*****/
   $('.js-faq-question').on('click', function () {
-      $(this).next().slideToggle();
-      $(this).toggleClass('is-open');
+    $(this).next().slideToggle();
+    $(this).toggleClass('is-open');
   });
 
 });

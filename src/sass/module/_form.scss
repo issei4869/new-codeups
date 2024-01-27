@@ -35,7 +35,7 @@
 
 .form__label {
   font-weight: $bold;
-  line-height: calc(21 / 16);
+  line-height: calc(23 / 16);
   @include mq(md){
     max-width: rem(220);
     width: 100%;
@@ -43,7 +43,7 @@
 }
 
 .form__label span {
-  font-weight: $regular;
+  font-weight: $normal;
   margin-left: rem(8);
   padding: rem(2) rem(12) rem(2) rem(11);
   display: inline-block;

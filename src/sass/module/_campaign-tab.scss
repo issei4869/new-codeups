@@ -3,11 +3,13 @@
 .category-tab {
   display: grid;
   justify-content: center;
-  row-gap: rem(40);
+  grid-template-columns: repeat(2, rem(162));
+  row-gap: rem(16);
+  column-gap: rem(21);
   @include mq('md') {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: rem(80);
-    column-gap: rem(40);
+    grid-template-columns: repeat(4, rem(162));
+    justify-content: left;
+    column-gap: rem(32);
   }
 }
 

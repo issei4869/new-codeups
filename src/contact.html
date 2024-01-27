@@ -135,8 +135,7 @@
                   <a href="faq.html#"><span>よくある質問</span></a>
                 </li>
                 <li class="nav-items__item">
-                  <a href="privacypolicy.html
-#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
+                  <a href="privacypolicy.html#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
                 </li>
                 <li class="nav-items__item">
                   <a href="terms-of-service.html#"><span>利用規約</span></a>
@@ -181,9 +180,9 @@
     </div>
     
     <!-- お問い合わせフォーム -->
-    <section class="layout-sub-contact sub-contact">
-      <div class="sub-contact__inner inner">
-        <form class="sub-contact__form form" action="">
+    <div class="_layout-contactform contactform">
+      <div class="contactform__inner inner">
+        <form class="contactform__form form">
           <dl class="form__wrap">
             <dt class="form__label">お名前<span>必須</span></dt>
             <dd class="form__input form-input">
@@ -205,10 +204,10 @@
           <dl class="form__wrap">
             <dt class="form__label">お問合せ項目<span>必須</span></dt>
             <dd class="form__checkbox form-checkbox">
-              <label><input type="checkbox" name="sns" value="Twitter"><span>ダイビング講習について</span></label>
-              <label><input type="checkbox" name="sns" value="Instagram"><span>ファンデイビングについて</span></label>
-              <label><input type="checkbox" name="sns" value="Facebook"><span>体験ダイビングについて</span></label>
-              <label><input type="checkbox" name="sns" value="YouTube"><span>スペシャルダイビングについて</span></label>
+              <label><input type="checkbox" name="item" value="course"><span>ダイビング講習について</span></label>
+              <label><input type="checkbox" name="item" value="fan"><span>ファンダイビングについて</span></label>
+              <label><input type="checkbox" name="item" value="experience"><span>体験ダイビングについて</span></label>
+              <label><input type="checkbox" name="item" value="special"><span>スペシャルダイビングについて</span></label>
             </dd>
           </dl>
           <dl class="form__wrap">
@@ -217,7 +216,7 @@
               <select>
                 <option hidden>キャンペーン内容を選択</option>
                 <option value="ダイビング講習について">ダイビング講習について</option>
-                <option value="ファンデイビングについて">ファンデイビングについて</option>
+                <option value="ファンダイビングについて">ファンダイビングについて</option>
                 <option value="体験ダイビングについて">体験ダイビングについて</option>
                 <option value="スペシャルダイビングについて">スペシャルダイビングについて</option>
               </select>
@@ -229,11 +228,11 @@
               <textarea name="message"></textarea>
             </dd>
           </dl>
-          <dl class="form__wrap form__wrap--privacy">
-            <dd class="form__checkbox form-checkbox form-checkbox--privacy">
-              <label><input type="checkbox" name="sns" value="Twitter"><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
-            </dd>
-          </dl>
+          <div class="form__wrap form__wrap--privacy">
+            <div class="form__checkbox form-checkbox form-checkbox--privacy">
+              <label><input type="checkbox" name="privacy" value="privacy"><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
+            </div>
+          </div>
           <!-- <div class="form__submit form-submit">
             <input type="submit" value="送信">
           </div> -->
@@ -245,7 +244,7 @@
           </div>
         </form>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="layout-sub-footer layout-sub-footer--contact footer">
     <div class="footer__inner">
@@ -325,8 +324,7 @@
                 <a href="faq.html#"><span>よくある質問</span></a>
               </li>
               <li class="nav-items__item">
-                <a href="privacypolicy.html
-#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
+                <a href="privacypolicy.html#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
               </li>
               <li class="nav-items__item">
                 <a href="terms-of-service.html#"><span>利用規約</span></a>

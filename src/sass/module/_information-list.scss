@@ -69,6 +69,11 @@
 
 .information-list__title--sub {
   font-size: rem(24);
+  line-height: 1;
+  padding-bottom: rem(8);
+  @include mq('md') {
+    
+  }
 }
 
 .information-list__text {

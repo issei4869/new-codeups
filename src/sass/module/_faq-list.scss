@@ -39,18 +39,17 @@
 }
 
 .faq-list__item-question::after {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .faq-list__item-question.is-open::after {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 
 .faq-list__item-answer {
   line-height: calc(23 / 16);
   padding: rem(24) rem(16) rem(22);
   border: rem(1) solid $accent-color;
-  display: none;
   @include mq(md){
     padding: rem(39) rem(40) rem(39) rem(39);
     margin-top: rem(15);

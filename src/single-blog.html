@@ -135,8 +135,7 @@
                   <a href="faq.html#"><span>よくある質問</span></a>
                 </li>
                 <li class="nav-items__item">
-                  <a href="privacypolicy.html
-#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
+                  <a href="privacypolicy.html#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
                 </li>
                 <li class="nav-items__item">
                   <a href="terms-of-service.html#"><span>利用規約</span></a>
@@ -182,8 +181,8 @@
       </div>
     </div>
     
-    <!-- Blogセクション -->
-    <section class="layout-single-blog single-blog">
+    <!-- Blog詳細 -->
+    <div class="layout-single-blog single-blog">
 		  <div class="single-blog__inner inner">
         <div class="single-blog__wrapper">
           
@@ -196,7 +195,7 @@
               <img src="./assets/images/common/blog1.jpg" alt="イソギンチャクの画像">
             </div>
             <!-- ループ -->
-            <article class="single-blog__content">
+            <div class="single-blog__content">
               <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
               <div>
                 <img src="./assets/images/common/blog1.jpg" alt="イソギンチャクの画像">
@@ -208,7 +207,7 @@
                 <li>リスト3</li>
               </ul>
               <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-            </article> 
+            </div> 
           
           <!-- ページネーションボタン（共通パーツ） -->
           <div class="single-blog__pagenavi pagenavi">
@@ -246,52 +245,52 @@
                 <ul class="blog-sidebar-item__list blog-sidebar-cards">
                   <!-- ループ（カード1枚） -->
                   <li class="blog-sidebar-cards__card blog-sidebar-card">
-                    <article class="blog-sidebar-card__popularity">
+                    <div class="blog-sidebar-card__popularity">
                       <a class="blog-sidebar-card__link" href="#">
                         <div class="blog-sidebar-card__wrap">
                           <div class="blog-sidebar-card__img">
                             <img src="./assets/images/common/sub-gallery4.jpg" alt="黄色の魚の画像">
                           </div>
                           <div class="blog-sidebar-card__content">
-                            <time datetime="2023-11-17" class="blog-card__date">2023.11.17
+                            <time datetime="2023-11-17" class="blog-sidebar-card__date">2023.11.17
                             </time>
-                            <p class="blog-card__title blog-card__title--sub">ライセンス取得</p>
+                            <p class="blog-sidebar-card__title blog-sidebar-card__title--sub">ライセンス取得</p>
                           </div>
                         </div>
                       </a>
-                    </article>
+                    </div>
                   </li>
                   <li class="blog-sidebar-cards__card blog-sidebar-card">
-                    <article class="blog-sidebar-card__popularity">
+                    <div class="blog-sidebar-card__popularity">
                       <a class="blog-sidebar-card__link" href="#">
                         <div class="blog-sidebar-card__wrap">
                           <div class="blog-sidebar-card__img">
                             <img src="./assets/images/common/blog2.jpg" alt="ウミガメの画像">
                           </div>
                           <div class="blog-sidebar-card__content">
-                            <time datetime="2023-11-17" class="blog-card__date">2023.11.17
+                            <time datetime="2023-11-17" class="blog-sidebar-card__date">2023.11.17
                             </time>
-                            <p class="blog-card__title blog-card__title--sub">ウミガメと泳ぐ</p>
+                            <p class="blog-sidebar-card__title blog-sidebar-card__title--sub">ウミガメと泳ぐ</p>
                           </div>
                         </div>
                       </a>
-                    </article>
+                    </div>
                   </li>
                   <li class="blog-sidebar-cards__card blog-sidebar-card">
-                    <article class="blog-sidebar-card__popularity">
+                    <div class="blog-sidebar-card__popularity">
                       <a class="blog-sidebar-card__link" href="#">
                         <div class="blog-sidebar-card__wrap">
                           <div class="blog-sidebar-card__img">
                             <img src="./assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
                           </div>
                           <div class="blog-sidebar-card__content">
-                            <time datetime="2023-11-17" class="blog-card__date">2023.11.17
+                            <time datetime="2023-11-17" class="blog-sidebar-card__date">2023.11.17
                             </time>
-                            <p class="blog-card__title blog-card__title--sub">カクレクマノミ</p>
+                            <p class="blog-sidebar-card__title blog-sidebar-card__title--sub">カクレクマノミ</p>
                           </div>
                         </div>
                       </a>
-                    </article>
+                    </div>
                   </li>
                 </ul>
               </li>
@@ -394,12 +393,12 @@
                       </div>
                     </div>
                   </li>
-                  <div class="blog-sidebar-items__btn">
+                  <li class="blog-sidebar-items__btn">
                     <!-- ボタンの共通パーツ -->
                     <a href="#" class="btn">
                       <span>View more</span>
                     </a>
-                  </div>
+                  </li>
                 </ul>
               </li>
               <!-- アーカイブ -->
@@ -427,10 +426,9 @@
                         <p class="toggle-list__item-answer">3月</p>
                         <p class="toggle-list__item-answer">2月</p>
                         <p class="toggle-list__item-answer">1月</p>
-                        <li class="toggle-list__item">
-                          <p class="toggle-list__item-question js-toggle-question">2022</p>
-                          
-                        </li>
+                      </li>
+                      <li class="toggle-list__item">
+                        <p class="toggle-list__item-question js-toggle-question">2022</p>
                       </li>
                     </ul>
                   </div>
@@ -444,7 +442,7 @@
           </div>
         </aside>
       </div>
-    </section>
+    </div>
 
     <!-- Contactセクション -->
     <section class="layout-sub-contact contact">
@@ -572,8 +570,7 @@
                 <a href="faq.html#"><span>よくある質問</span></a>
               </li>
               <li class="nav-items__item">
-                <a href="privacypolicy.html
-#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
+                <a href="privacypolicy.html#"><span>プライバシー<br class="u-mobile">ポリシー</span></a>
               </li>
               <li class="nav-items__item">
                 <a href="terms-of-service.html#"><span>利用規約</span></a>

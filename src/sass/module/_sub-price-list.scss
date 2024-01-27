@@ -30,6 +30,7 @@
 .sub-price-list__wrapper span {
   color: $base-color;
   font-weight: $bold;
+  line-height: calc(24 / 16);
 }
 
 .sub-price-list__wrapper span svg {

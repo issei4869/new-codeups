@@ -1,10 +1,10 @@
 @use 'global' as *;
 
-.sub-contact {
+.contactform {
   position: relative;
 }
 
-.sub-contact::before {
+.contactform::before {
   content: "";
   position: absolute;
   background-image: url(../images/common/goldfish2.png);
@@ -15,7 +15,7 @@
   left: rem(15);
   min-width: rem(120);
   min-height: rem(55);
-  z-index: 999;
+  z-index: -1;
   @include mq('md') {
     top: rem(-70);
     left: calc(50% - min(48%, rem(619)));
@@ -24,11 +24,11 @@
   }
 }
 
-.sub-contact__inner {
+.contactform__inner {
   
 }
 
-.sub-contact__inner.inner {
+.contactform__inner.inner {
   max-width: rem(750);
   width: 100%;
 }
