@@ -6,7 +6,7 @@
 
 .explanation__title {
   font-size: rem(24);
-  font-weight: $bold;
+  font-weight: $medium;
   line-height: calc(35 / 24);
   @include mq('md') {
     font-size: rem(32);

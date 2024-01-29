@@ -2,8 +2,8 @@
 
 .error {
   padding: rem(53) 0 rem(40);
-  background-color: $accent-color;
-  border: rem(1) solid $accent-color;
+  // background-color: $accent-color;
+  // border: rem(1) solid $accent-color;
   content: "";
   background-image: url(../images/common/404.png);
   background-repeat: no-repeat;
@@ -17,23 +17,7 @@
 }
 
 .error::before {
-  // content: "";
-  // position: absolute;
-  // background-image: url(../images/common/404.png);
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-size: cover;
-  // top: 25%;
-  // left: 25%;
-  // transform: translate(-25% -25%);
-  // // transform: translateY(-50%);
-  // min-width: rem(328);
-  // min-height: rem(328);
-  // @include mq('md') {
-  //   top: rem(-70);
-  //   left: calc(50% - min(48%, rem(619)));
-  //   min-width: rem(301);
-  //   min-height: rem(138);
+  
 }
 
 .error__inner {
@@ -53,6 +37,7 @@
 .error__title {
   font-family: $english-second-font-family;
   font-size: rem(80);
+  font-weight: $normal;
   line-height: calc(96 / 80);
   letter-spacing: 0.5em;
   text-indent: 0.5em;

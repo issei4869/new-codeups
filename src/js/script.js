@@ -70,10 +70,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     fadeEffect: {
       crossFade: true,
     },
-    // autoplay: {
-    //   delay: 4000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
   });
 
   // Campaignリサイズ処理（PC時のみ矢印表示）
@@ -96,10 +96,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       speed: 2000,
       slidesPerView: 1.27,
       spaceBetween: 24,
-      // autoplay: {
-      //   delay: 2000,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
       breakpoints: {
         768: {
           slidesPerView: 3.485,
@@ -141,35 +141,47 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(function() {
-    let pageHash = window.location.hash;
+    let pageHash = location.hash;
     if (pageHash) {
         let scrollToElement = $('[data-id="' + pageHash + '"]');
         if (!scrollToElement.length) return;
+        
         $(window).on('load', function() {
             history.replaceState('', '', './');
             let locationOffset = scrollToElement.offset().top;
             let navigationBarHeight = $('.header').innerHeight();
             locationOffset = locationOffset - navigationBarHeight;
-            $('html, body').animate({
-                scrollTop: locationOffset
-            }, 300, 'swing');
+
+            // Microsoft Edge向けの修正
+            document.documentElement.scrollTop = locationOffset;
+            document.body.scrollTop = locationOffset;
+
+            // 兼容性のある書き方
+            // document.documentElement.scrollTop = locationOffset;
+            // document.body.scrollTop = locationOffset;
+
+            //アニメーションを追加する場合
+            // $('html, body').animate({
+            //     scrollTop: locationOffset
+            // }, 300, 'swing');
         });
     }
-  });
+});
 
-  $(function() {
-      $('a[href*="#"]').on('click', function() {
-          const scrollSpeed = 400;
-          const navigationHeight = $(".header").innerHeight();
-          const scrollToTarget = $(this.hash === '#' || '' ? 'html' : this.hash)
-          if (!scrollToTarget.length) return;
-          const scrollPosition = scrollToTarget.offset().top - navigationHeight;
-          $('html, body').animate({
-              scrollTop: scrollPosition
-          }, scrollSpeed, 'swing');
-          return false;
-      });
-  });
+
+  // $(function() {
+  //     $('a[href*="#"]').on('click', function() {
+  //         const scrollSpeed = 400;
+  //         const navigationHeight = $(".header").innerHeight();
+  //         const scrollToTarget = $(this.hash === '#' || '' ? 'html' : this.hash)
+  //         if (!scrollToTarget.length) return;
+  //         const scrollPosition = scrollToTarget.offset().top - navigationHeight;
+  //         $('html, body').animate({
+  //             scrollTop: scrollPosition
+  //         }, scrollSpeed, 'swing');
+  //         return false;
+  //     });
+  // });
 
   // $(document).on('click', 'a[href*="#"]', function () {
   //   let time = 400;
@@ -180,6 +192,27 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   //   $('html,body').animate({ scrollTop: targetY }, time, 'swing');
   //   return false;
   // });
+
+  // $(function(){
+  //   //現在のページURLのハッシュ部分を取得
+  //   const hash = location.href;
+  //   let header = $('header').innerHeight();
+  //   //ハッシュ部分がある場合の条件分岐
+  //   if(hash){
+  //     //ページ遷移後のスクロール位置指定
+  //     $("html, body").stop().scrollTop(0);
+  //     //処理を遅らせる
+  //     setTimeout(function(){
+  //       //リンク先を取得
+  //       const target = $(hash),
+  //       //リンク先までの距離を取得
+  //       position = target.offset().top - header;
+  //       //指定の場所までスムーススクロール
+  //       $("html, body").animate({scrollTop:position}, 500, "swing");
+  //     });
+  //   }
+  // });
+
 
   /*****Tab切り替え*****/
   $('.js-tab-menu').on('click', function () {

@@ -21,8 +21,11 @@
   left: rem(15);
   min-width: rem(120);
   min-height: rem(55);
-  z-index: 999;
+  z-index: -1;
   @include mq('md') {
-    display: none;
+    top: rem(-70);
+    left: calc(50% - min(48%, rem(619)));
+    min-width: rem(301);
+    min-height: rem(138);
   }
 }
