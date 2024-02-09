@@ -1,58 +1,7 @@
 @use 'global' as *;
 
 .single-blog {
-  position: relative;
-}
 
-.single-blog::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/common/goldfish2.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  top: rem(-24);
-  left: rem(15);
-  min-width: rem(120);
-  min-height: rem(55);
-  @include mq('md') {
-    top: rem(-70);
-    left: calc(50% - min(48%, rem(619)));
-    min-width: rem(301);
-    min-height: rem(138);
-  }
-}
-
-.single-blog__inner {
-  @include mq(md){
-    display: grid;
-    grid-template-columns: 1fr rem(294);
-    gap: rem(80);
-  }
-}
-
-.single-blog__inner.inner {
-  // padding: 0 rem(21);
-  // @include mq('md') {
-  //   padding: 0 rem(25);
-  // }
-}
-
-
-.single-blog__wrapper {
-  
-  @include mq(md){
-    max-width: rem(700);
-    width: 100%;
-  }
-}
-
-.single-blog__list {
-  
-  @include mq(md) {
-    // flex-wrap: wrap;
-    // border-top: none;
-  }
 }
 
 .single-blog__meta {
@@ -119,16 +68,16 @@
 }
 
 .single-blog__content ul li {
-  line-height: calc(24 / 16);
   position: relative;
-  text-indent: rem(27);
+  line-height: calc(24 / 16);
+  padding-left: rem(27);
+  // display: inline-block;
 }
 
 .single-blog__content ul li::before {
   content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: rem(4);
   left: 0;
   right: 0;
   width: rem(18);
@@ -148,15 +97,6 @@
   margin-top: rem(40);
   @include mq('md') {
     margin-top: rem(82);
-  }
-}
-
-
-/*****サイドバー*****/
-.single-blog__sidebar {
-  margin-top: rem(84);
-  @include mq(md) {
-    margin-top: rem(4);
   }
 }
 

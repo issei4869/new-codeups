@@ -152,7 +152,7 @@
   </header>
   <main>
     <!-- MVセクション -->
-    <section class="mv">
+    <section class="mv mv--sub">
       <div class="mv__inner">
         <div class="mv__title-wrap mv__title-wrap--sub">
           <h2 class="mv__main-title mv__main-title--sub">Blog</h2>
@@ -180,12 +180,12 @@
     </div>
     
     <!-- Blog一覧 -->
-    <div class="layout-archive-blog archive-blog">
-		  <div class="archive-blog__inner inner">
-        <div class="archive-blog__wrapper">
-          <div class="archive-blog__list">
+    <div class="layout-sub-blog sub-blog fish">
+		  <div class="sub-blog__inner inner">
+        <div class="sub-blog__wrapper">
+          <ul class="blog-list blog-list--sub">
             <!-- ループ -->
-            <div class="archive-blog__item blog-card">
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog1.jpg" alt="イソギンチャクの画像">
@@ -198,8 +198,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog2.jpg" alt="ウミガメの画像">
@@ -212,8 +212,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
@@ -226,8 +226,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/sub-gallery4.jpg" alt="黄色の魚の画像">
@@ -240,8 +240,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
@@ -254,8 +254,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
@@ -268,8 +268,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
@@ -282,8 +282,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/sub-gallery4.jpg" alt="黄色の魚の画像">
@@ -296,8 +296,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog5.jpg" alt="クラゲの画像">
@@ -310,8 +310,8 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-            <div class="archive-blog__item blog-card">
+            </li>
+            <li class="blog-list__item blog-card">
               <a href="#">
                 <div class="blog-card__img">
                   <img src="./assets/images/common/blog4.jpg" alt="ウミガメ？の画像">
@@ -324,10 +324,10 @@
                   <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
           <!-- ページネーションボタン（共通パーツ） -->
-          <div class="archive-blog__pagenavi pagenavi">
+          <div class="blog-list__pagenavi pagenavi">
             <div class="pagenavi__inner">
               <!-- WP-PageNaviで出力される部分 ここから -->
               <div class='wp-pagenavi' role='navigation'>
@@ -345,7 +345,7 @@
           </div>
         </div>
         <!-- サイドバー -->
-        <aside class="archive-blog__sidebar blog-sidebar">
+        <aside class="sub-blog__sidebar blog-sidebar">
           <div class="blog-sidebar__inner inner">
             <ul class="blog-sidebar__list">
               <!-- 人気記事 -->
@@ -546,12 +546,14 @@
                     <ul class="toggle__list toggle-list">
                       <li class="toggle-list__item">
                         <p class="toggle-list__item-question js-toggle-question">2023</p>
-                        <p class="toggle-list__item-answer">3月</p>
-                        <p class="toggle-list__item-answer">2月</p>
-                        <p class="toggle-list__item-answer">1月</p>
+                          <ul>
+                            <li><a href="#" class="toggle-list__item-answer">3月</a></li>
+                            <li><a href="#" class="toggle-list__item-answer">2月</a></li>
+                            <li><a href="#" class="toggle-list__item-answer">1月</a></li>
+                          </ul>
                       </li>
                       <li class="toggle-list__item">
-                        <p class="toggle-list__item-question js-toggle-question">2022</p>
+                        <p class="toggle-list__item-question toggle-list__item-question--two js-toggle-question">2022</p>
                       </li>
                     </ul>
                   </div>

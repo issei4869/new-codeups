@@ -1,27 +1,7 @@
 @use 'global' as *;
 
 .contact-thanks {
-  position: relative;
-}
-
-.contact-thanks::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/common/goldfish2.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  top: rem(-24);
-  left: rem(15);
-  min-width: rem(120);
-  min-height: rem(55);
-  z-index: 999;
-  @include mq('md') {
-    top: rem(-70);
-    left: calc(50% - min(48%, rem(619)));
-    min-width: rem(301);
-    min-height: rem(138);
-  }
+  
 }
 
 .contact-thanks__text,

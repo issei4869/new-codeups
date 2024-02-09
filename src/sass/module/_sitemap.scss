@@ -1,26 +1,8 @@
 @use 'global' as *;
 
 .sitemap {
-  position: relative;
+  
 }
-
-.sitemap::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/common/goldfish2.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  top: rem(-24);
-  left: rem(15);
-  min-width: rem(120);
-  min-height: rem(55);
-  z-index: 999;
-  @include mq('md') {
-    display: none;
-  }
-}
-
 
 .sitemap__content {
   margin-top: rem(40);

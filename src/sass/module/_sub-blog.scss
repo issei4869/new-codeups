@@ -1,0 +1,36 @@
+@use 'global' as *;
+
+.sub-blog {
+  
+}
+
+.sub-blog__inner {
+  @include mq(md){
+    display: grid;
+    grid-template-columns: 1fr rem(294);
+    gap: rem(80);
+  }
+}
+
+.sub-blog__inner.inner {
+  // padding: 0 rem(21);
+  // @include mq('md') {
+  //   padding: 0 rem(25);
+  // }
+}
+
+.sub-blog__wrapper {
+  
+  @include mq(md){
+    max-width: rem(700);
+    width: 100%;
+  }
+}
+
+/*****サイドバー*****/
+.sub-blog__sidebar {
+    margin-top: rem(84);
+    @include mq(md) {
+      margin-top: rem(4);
+    }
+  }

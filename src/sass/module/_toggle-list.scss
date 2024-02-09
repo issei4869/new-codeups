@@ -10,7 +10,6 @@
 
 .toggle-list__item-question,
 .toggle-list__item-answer {
-  
   color: $accent-color;
   font-size: rem(24);
   line-height: calc(35 / 24);
@@ -26,12 +25,18 @@
   }
 }
 
+.toggle-list__item-question ul {
+  display: none;
+}
+
+.toggle-list__item-question ul li {
+  padding: rem(3) 0;
+  text-indent: rem(34);
+}
+
 .toggle-list__item-answer {
   position: relative;
   margin-left: rem(24);
-  padding: rem(3) 0;
-  display: none;
-  text-indent: rem(34);
   @include mq(md){
     //padding: rem(20) rem(40) rem(15) rem(80);
   }
@@ -53,12 +58,26 @@
   }
 }
 
-.toggle-list__item-question::before,
+.toggle-list__item-question::before {
+  transform: rotate(180deg);
+}
+
+.toggle-list__item-question--two::before {
+  transform: rotate(90deg);
+}
+
 .toggle-list__item-answer::before {
   transform: rotate(90deg);
 }
 
-.toggle-list__item-question.is-open::before,
+.toggle-list__item-question.is-open::before {
+  transform: rotate(90deg);
+}
+
+.toggle-list__item-question--two.is-open::before {
+  transform: rotate(180deg);
+}
+
 .toggle-list__item-answer.is-open::before {
   transform: rotate(180deg);
 }

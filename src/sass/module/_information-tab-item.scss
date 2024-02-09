@@ -8,6 +8,7 @@
   background-color: #DDF0F1;
   text-align: center;
   cursor: pointer;
+  transition: all .3s;
   box-shadow: rem(2) rem(2) rem(4) 0 rgba(0, 0, 0, .25);
   @include mq('md') {
     display: flex;
@@ -22,8 +23,36 @@
   font-size: rem(14);
   line-height: calc(20 / 14);
   flex-shrink: 0;
+  
   @include mq('md') {
     font-size: rem(24);
     line-height: calc(35 / 24);
   }
+}
+
+.information-tab-item span svg {
+  width: rem(64);
+  height: rem(64);
+}
+
+.information-tab-item span svg path {
+  fill: $accent-color;
+}
+
+.information-tab-item:hover {
+  color: $base-color;
+  background-color: $accent-color;
+}
+
+.information-tab-item:hover span svg path {
+  fill: $base-color;
+}
+
+.information-tab-item.is-active span svg path {
+  fill: $base-color;
+}
+
+.information-tab-item.is-active {
+  color: $base-color;
+  background-color: $accent-color;
 }

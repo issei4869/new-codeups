@@ -13,12 +13,18 @@
   background-color: $base-color;
   text-align: center;
   cursor: pointer;
+  transition: all .3s;
   @include mq(md){
     
   }
 }
 
 .category-tab-item.is-active {
+  color: $base-color;
+  background-color: $accent-color;
+}
+
+.category-tab-item:hover {
   color: $base-color;
   background-color: $accent-color;
 }

@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.layout-single-blog {
+.layout-sub-blog {
   margin-top: rem(50);
   @include mq('md') {
     margin-top: rem(149);

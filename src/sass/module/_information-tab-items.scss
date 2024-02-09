@@ -10,26 +10,6 @@
   }
 }
 
-//画像
-.information-tab-items__item span svg {
-  width: rem(64);
-  height: rem(64);
-}
-
-.information-tab-items__item span svg path {
-  fill: $accent-color;
-}
-
-.information-tab-items__item.is-active span svg path {
-  fill: $base-color;
-}
-
-.information-tab-items__item.is-active {
-  color: $base-color;
-  background-color: $accent-color;
-}
-
-
 .information-tab__content-item {
   padding: rem(25);
   display: none;
