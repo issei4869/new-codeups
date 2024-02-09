@@ -270,11 +270,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  //Informationページのリンククリックによるスムーススクロール
+  //Informationページのリンククリックによる同ページスムーススクロール
   $(function() {
     $('a[href*="information.html#"]').on('click', function() {
       const scrollSpeed = 400;
-        
         let scrollToElement = $('[data-id="' + this.hash + '"]');
         if (!scrollToElement.length) return;
           let locationOffset = scrollToElement.offset().top;
@@ -283,10 +282,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
           $('html, body').animate({
               scrollTop: locationOffset
           }, 300, 'swing');
-      
     });
   });
-  
+
   /*****Tab切り替え*****/
   $('.js-tab-menu').on('click', function () {
     $('.js-tab-menu').removeClass('is-active');
