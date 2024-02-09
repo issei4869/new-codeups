@@ -183,16 +183,40 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   //     });
   // });
 
-  $(document).on('click', 'a[href*="#"]', function () {
-    let time = 400;
-    let header = $('header').innerHeight();
-    let target = $(this.hash);
-    if (!target.length) return;
-    let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
-    return false;
-  });
+  // $(document).on('click', 'a[href*="#"]', function () {
+  //   let time = 400;
+  //   let header = $('header').innerHeight();
+  //   let target = $(this.hash);
+  //   if (!target.length) return;
+  //   let targetY = target.offset().top - header;
+  //   $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+  //   return false;
+  // });
 
+  // $(document).on('click', 'a[href*="#"]', function (e) {
+  //   e.preventDefault(); // Prevent default anchor click behavior
+  
+  //   let time = 400;
+  //   let headerHeight = $('header').innerHeight();
+  //   let href = $.attr(this, 'href');
+  //   let pageUrl = href.split('#')[0];
+  //   let hash = href.substring(href.indexOf('#'));
+  
+  //   // Check if the target is on the current page
+  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+  //     let target = $(hash);
+  //     target = target.length ? target : $('[name=' + hash.slice(1) + ']');
+  //     if (target.length) {
+  //       $('html,body').animate({
+  //         scrollTop: target.offset().top - headerHeight
+  //       }, time, 'swing');
+  //       return false;
+  //     }
+  //   } else {
+  //     // If the target is on a different page, navigate to that page first
+  //     window.location = pageUrl + hash;
+  //   }
+  // });
   // $(function(){
   //   //現在のページURLのハッシュ部分を取得
   //   const hash = location.href;
@@ -213,7 +237,56 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   //   }
   // });
 
+  //別ページのリンククリックによるスムーススクロール
+  $(function() {
+    let pageHash = window.location.hash;
+    if (pageHash) {
+      let scrollToElement = $('[data-id="' + pageHash + '"]');
+      if (!scrollToElement.length) return;
+      $(window).on('load', function() {
+        history.replaceState('', '', './');
+        let locationOffset = scrollToElement.offset().top;
+        let navigationBarHeight = $('.header').innerHeight();
+        locationOffset = locationOffset - navigationBarHeight;
+        $('html, body').animate({
+            scrollTop: locationOffset
+        }, 300, 'swing');
+      });
+    }
+  });
 
+  //同ページのリンククリックによるスムーススクロール
+  $(function() {
+    $('a[href*="#"]').on('click', function() {
+      const scrollSpeed = 400;
+      const navigationHeight = $(".header").innerHeight();
+      const scrollToTarget = $(this.hash === '#' || '' ? 'html' : this.hash)
+      if (!scrollToTarget.length) return;
+      const scrollPosition = scrollToTarget.offset().top - navigationHeight;
+      $('html, body').animate({
+          scrollTop: scrollPosition
+      }, scrollSpeed, 'swing');
+      return false;
+    });
+  });
+
+  //Informationページのリンククリックによるスムーススクロール
+  $(function() {
+    $('a[href*="information.html#"]').on('click', function() {
+      const scrollSpeed = 400;
+        
+        let scrollToElement = $('[data-id="' + this.hash + '"]');
+        if (!scrollToElement.length) return;
+          let locationOffset = scrollToElement.offset().top;
+          let navigationBarHeight = $('.header').innerHeight();
+          locationOffset = locationOffset - navigationBarHeight;
+          $('html, body').animate({
+              scrollTop: locationOffset
+          }, 300, 'swing');
+      
+    });
+  });
+  
   /*****Tab切り替え*****/
   $('.js-tab-menu').on('click', function () {
     $('.js-tab-menu').removeClass('is-active');
