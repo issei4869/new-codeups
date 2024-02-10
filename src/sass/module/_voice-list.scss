@@ -8,7 +8,8 @@
     display: grid;
     // flex-wrap: wrap;
     max-width: initial;
-    gap: rem(40);
+    column-gap: rem(40);
+    row-gap: rem(83);
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -33,6 +34,6 @@
 
 .voice-list__item:nth-of-type(n+3) {
   @include mq(md){
-    margin-top: rem(80);
+    // margin-top: rem(80);
   }
 }

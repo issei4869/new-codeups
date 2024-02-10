@@ -12,25 +12,30 @@
   }
 }
 
-.sub-blog__inner.inner {
-  // padding: 0 rem(21);
-  // @include mq('md') {
-  //   padding: 0 rem(25);
-  // }
+.sub-blog__inner--archive.inner {
+  padding: 0 rem(21);
+  @include mq('md') {
+    padding: 0 rem(25);
+  }
 }
 
 .sub-blog__wrapper {
-  
   @include mq(md){
-    max-width: rem(700);
     width: 100%;
   }
 }
 
+.sub-blog__wrapper--single {
+  @include mq(md){
+    max-width: rem(700);
+  }
+}
+
+
 /*****サイドバー*****/
 .sub-blog__sidebar {
-    margin-top: rem(84);
-    @include mq(md) {
-      margin-top: rem(4);
-    }
+  margin-top: rem(84);
+  @include mq(md) {
+    margin-top: rem(4);
   }
+}

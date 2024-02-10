@@ -13,7 +13,7 @@
   color: $accent-color;
   font-size: rem(24);
   line-height: calc(35 / 24);
-  padding-left: rem(36);
+  padding-left: rem(32);
   cursor: pointer;
 }
 
@@ -29,9 +29,14 @@
   display: none;
 }
 
-.toggle-list__item-question ul li {
+.toggle-list__item-top {
   padding: rem(3) 0;
-  text-indent: rem(34);
+  text-indent: rem(1);
+  // margin-top: rem(4);
+}
+
+.toggle-list__item-top + .toggle-list__item-top {
+  // margin-top: rem(3);
 }
 
 .toggle-list__item-answer {

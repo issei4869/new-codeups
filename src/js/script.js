@@ -295,7 +295,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-  $('.js-footer-menu, .js-drawer-menu').on('click', function () {
+  $('.js-link-menu').on('click', function () {
     var number = $(this).data("number");
     $('.js-tab-menu[data-number="' + number + '"]').click();
   });
@@ -306,15 +306,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $('.js-tab-menu[data-number="' + hash + '"]').click();
     }
   });
-
-
-  // $('.js-footer-menu').on('click', function () {
-  //   $('.js-tab-menu').removeClass('is-active');
-  //   $('.js-tab-content').removeClass('is-active');
-  //   $(this).addClass('is-active');
-  //   var number = $(this).data("number");
-  //   $('#' + number).addClass('is-active');
-  // });
 
   // $(function () {
   //   //タブの実装
