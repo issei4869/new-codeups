@@ -12,25 +12,11 @@
   }
 }
 
-.sub-blog__inner--archive.inner {
-  padding: 0 rem(21);
-  @include mq('md') {
-    padding: 0 rem(25);
-  }
-}
-
 .sub-blog__wrapper {
   @include mq(md){
     width: 100%;
   }
 }
-
-.sub-blog__wrapper--single {
-  @include mq(md){
-    max-width: rem(700);
-  }
-}
-
 
 /*****サイドバー*****/
 .sub-blog__sidebar {

@@ -1,7 +1,6 @@
 @use 'global' as *;
 
 .voice-list {
-  max-width: rem(600);
   width: 100%;
   @include mq(md){
     // display: flex;
